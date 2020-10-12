@@ -242,13 +242,27 @@
                         <a href='https://www.conll.org/2020' target="_blank">CoNLL 2020</a> shared task.
                     </div>
                     <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="huji-ku-mrp.pdf" class="btn btn-outline-primary btn-sm">pdf</a>
                         <a href="mrp.bib" class="btn btn-outline-primary btn-sm">bib</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#huji-ku-mrp2020_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
                         <a href="https://github.com/danielhers/tupa/tree/mrp"
                            class="btn btn-outline-primary btn-sm">TUPA code</a>
                         <a href="https://github.com/ruixiangcui/hit-scir-mrp2020"
                            class="btn btn-outline-primary btn-sm">HIT-SCIR code</a>
                         <a href="https://github.com/OfirArviv/hit-scir-mrp2020/tree/multitask"
                            class="btn btn-outline-primary btn-sm">multitask code</a>
+                    </div>
+                    <div id="huji-ku-mrp2020_abstract" class="abstract row" style="display:none;">
+                      <i>This paper describes the HUJI-KU system submission to the shared task
+                        on Cross-Framework Meaning Representation Parsing (MRP) at the 2020
+                        Conference for Computational Language Learning (CoNLL),
+                        employing TUPA and the HIT-SCIR parser, which were, respectively,
+                        the baseline system and winning system in the 2019 MRP shared task.
+                        Both are transition-based parsers using BERT contextualized embeddings.
+                        We generalized TUPA to support the newly-added MRP frameworks and languages,
+                        and experimented with multitask learning with the HIT-SCIR parser.
+                        We reached 4th place in both the cross-framework and cross-lingual tracks.</i>
                     </div>
                 </div>
             </li>
