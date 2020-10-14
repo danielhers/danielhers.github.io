@@ -68,6 +68,14 @@ body .cv .publications .abstract {
     padding: 2px;
 }
 
+body .bibtex {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    background-color:#f5f5f5;
+}
+
 body .cv .header {
     color:#1A4D11;
 }
