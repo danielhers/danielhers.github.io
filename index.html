@@ -14,17 +14,6 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101317305-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-101317305-2');
-    </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </head>
@@ -1233,6 +1222,17 @@
     }
 
     window.onload = embedBibtex;
+
+    // For Google Analytics
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-101317305-2');
 </script>
 
 </body>
