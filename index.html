@@ -83,6 +83,11 @@
 
     <div class="news">
         <ul>
+            <li>Our paper <a href="#srl-coref-rl">
+                Joint Semantic Analysis with Document-Level Cross-Task Coherence Rewards</a>
+                was accepted to
+                <a href="https://aaai.org/Conferences/AAAI-21">AAAI 2021</a>!
+            </li>
             <li>Our paper <a href="#streusle2ucca">
                 Comparison by Conversion: Reverse-Engineering UCCA from Syntax and Lexical Semantics</a>
                 was accepted to
@@ -147,6 +152,29 @@
 
     <div class="publications">
         <ul>
+            <li><a id="srl-coref-rl"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Joint Semantic Analysis with Document-Level Cross-Task Coherence Rewards</i></b>.
+                        <br>
+                        Rahul Aralikatte, Mostafa Abdou, Heather Lent, <b>Daniel Hershcovich</b> and Anders Søgaard.<br>
+                        <a href='https://aaai.org/Conferences/AAAI-21' target="_blank">AAAI 2021</a> (long paper).
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2010.05567" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#srl_coref_rl_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="srl-coref-rl.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/rahular/joint-coref-srl"
+                           class="btn btn-outline-primary btn-sm">code</a>
+                    </div>
+                    <div id="srl_coref_rl_abstract" class="abstract row" style="display:none;">
+                        <i>Coreference resolution and semantic role labeling are NLP tasks that capture different aspects of semantics, indicating respectively, which expressions refer to the same entity, and what semantic roles expressions serve in the sentence. However, they are often closely interdependent, and both generally necessitate natural language understanding. Do they form a coherent abstract representation of documents? We present a neural network architecture for joint coreference resolution and semantic role labeling for English, and train graph neural networks to model the 'coherence' of the combined shallow semantic graph. Using the resulting coherence score as a reward for our joint semantic analyzer, we use reinforcement learning to encourage global coherence over the document and between semantic annotations. This leads to improvements on both tasks in multiple datasets from different domains, and across a range of encoders of different expressivity, calling, we believe, for a more holistic approach for semantics in NLP.
+                        </i>
+                    </div>
+                </div>
+            </li>
+
             <li><a id="ucca_tutorial_coling2020"></a>
                 <div class="row">
                     <div class="col-md-4">
