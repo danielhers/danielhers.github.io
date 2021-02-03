@@ -143,6 +143,27 @@
 
     <div class="publications">
         <ul>
+            <li><a id="cognitive-mr"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Does injecting linguistic structure into language models lead to better alignment with brain recordings?</i></b>.
+                        <br>
+                        Mostafa Abdou, Ana Valeria Gonzalez, Mariya Toneva, <b>Daniel Hershcovich</b> and Anders Søgaard.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2101.12608" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#cognitive-mr_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="cognitive-mr.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/mhany90/Structural_bias_brain"
+                           class="btn btn-outline-primary btn-sm">code</a>
+                    </div>
+                    <div id="cognitive-mr_abstract" class="abstract row" style="display:none;">
+                        <i>Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman, 2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</i>
+                    </div>
+                </div>
+            </li>
+
             <li><a id="srl-coref-rl"></a>
                 <div class="row">
                     <div class="col-md-4">
@@ -384,6 +405,27 @@
                             in the official ranking, according to average ELAS. Our parser demonstrates that a unified
                             pipeline is effective for both Meaning Representation Parsing and Enhanced Universal
                             Dependencies.</i>
+                    </div>
+                </div>
+            </li>
+            
+            <li><a id="streusle-tagger"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Lexical Semantic Recognition</i></b>.
+                        <br>
+                        Nelson F. Liu, <b>Daniel Hershcovich</b>, Michael Kranzlein, Nathan Schneider.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2004.15008" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#streusle-tagger_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="streusle-tagger.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/nelson-liu/lexical-semantic-recognition"
+                           class="btn btn-outline-primary btn-sm">code</a>
+                    </div>
+                    <div id="streusle-tagger_abstract" class="abstract row" style="display:none;">
+                        <i>Segmentation and (segment) labeling are generally treated separately in lexical semantics, raising issues due to their close inter-dependence and necessitating joint annotation. We therefore investigate the lexical semantic recognition task of multiword expression segmentation and supersense disambiguation, unifying several previously-disparate styles of lexical semantic annotation. We evaluate a neural CRF model along all annotation axes available in version 4.3 of the STREUSLE corpus: lexical unit segmentation (multiword expressions), word-level syntactic tags, and supersense classes for noun, verb, and preposition/possessive units. As the label set generalizes that of previous tasks (DiMSUM, PARSEME), we additionally evaluate how well the model generalizes to those test sets, with encouraging results. By establishing baseline models and evaluation metrics, we pave the way for comprehensive and accurate modeling of lexical semantics.</i>
                     </div>
                 </div>
             </li>
