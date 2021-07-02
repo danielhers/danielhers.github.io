@@ -113,6 +113,91 @@
 
     <div class="publications">
         <ul>
+            <li><a id="iwpt2021"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Great Service! Fine-grained Parsing of Implicit Arguments</i></b>.
+                        <br>Ruixiang Cui and <b>Daniel Hershcovich</b>.<br>
+                        <a href='https://iwpt21.sigparse.org/' target="_blank">IWPT 2021</a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2106.02561" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#iwpt2021_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="iwpt2021.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/ruixiangcui/implicit_parser"
+                           class="btn btn-outline-primary btn-sm">code</a>
+                    </div>
+                    <div id="iwpt2021_abstract" class="abstract row" style="display:none;">
+                        <i>Broad-coverage meaning representations in NLP mostly focus on explicitly expressed content. More importantly, the scarcity of datasets annotating diverse implicit roles limits empirical studies into their linguistic nuances. For example, in the web review "Great service!", the provider and consumer are implicit arguments of different types. We examine an annotated corpus of fine-grained implicit arguments (Cui and Hershcovich, 2020) by carefully re-annotating it, resolving several inconsistencies. Subsequently, we present the first transition-based neural parser that can handle implicit arguments dynamically, and experiment with two different transition systems on the improved dataset. We find that certain types of implicit arguments are more difficult to parse than others and that the simpler system is more accurate in recovering implicit arguments, despite having a lower overall parsing score, attesting current reasoning limitations of NLP models. This work will facilitate a better understanding of implicit and underspecified language, by incorporating it holistically into meaning representations.</i>
+                    </div>
+                </div>
+            </li>
+
+            <li><a id="streusle-tagger"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Lexical Semantic Recognition</i></b>.
+                        <br>
+                        Nelson F. Liu, <b>Daniel Hershcovich</b>, Michael Kranzlein, Nathan Schneider.<br>
+                        <a href='https://multiword.org/mwe2021/' target="_blank">MWE 2021/a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2004.15008" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#streusle-tagger_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="streusle-tagger.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/nelson-liu/lexical-semantic-recognition"
+                           class="btn btn-outline-primary btn-sm">code</a>
+                    </div>
+                    <div id="streusle-tagger_abstract" class="abstract row" style="display:none;">
+                        <i>In lexical semantics, full-sentence segmentation and segment labeling of various phenomena are generally treated separately, despite their interdependence. We hypothesize that a unified lexical semantic recognition task is an effective way to encapsulate previously disparate styles of annotation, including multiword expression identification / classification and supersense tagging. Using the STREUSLE corpus, we train a neural CRF sequence tagger and evaluate its performance along various axes of annotation. As the label set generalizes that of previous tasks (PARSEME, DiMSUM), we additionally evaluate how well the model generalizes to those test sets, finding that it approaches or surpasses existing models despite training only on STREUSLE. Our work also establishes baseline models and evaluation metrics for integrated and accurate modeling of lexical semantics, facilitating future work in this area.</i>
+                    </div>
+                </div>
+            </li>
+
+            <li><a id="kisurvey"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>It’s the Meaning That Counts: The State of the Art in NLP and Semantics</i></b>.
+                        <br>
+                        <b>Daniel Hershcovich</b> and Lucia Donatelli.<br>
+                        <a href='https://link.springer.com/journal/13218' target="_blank">KI - Künstliche Intelligenz</a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://rdcu.be/cl0z3" class="btn btn-outline-primary btn-sm">pdf</a>
+                        <a href="http://link.springer.com/article/10.1007/s13218-021-00726-6" class="btn btn-outline-primary btn-sm">online</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#kisurvey_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="kisurvey.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="kisurvey_abstract" class="abstract row" style="display:none;">
+                        <i>Semantics, the study of meaning, is central to research in Natural Language Processing (NLP) and many other fields connected to Artificial Intelligence. Nevertheless, how semantics is understood in NLP ranges from traditional, formal linguistic definitions based on logic and the principle of compositionality to more applied notions based on grounding meaning in real-world objects and real-time interaction. “Semantic” methods may additionally strive for meaningful representation of language that integrates broader aspects of human cognition and embodied experience, calling into question how adequate a representation of meaning based on linguistic signal alone is for current research agendas. We review the state of computational semantics in NLP and investigate how different lines of inquiry reflect distinct understandings of semantics and prioritize different layers of linguistic meaning. In conclusion, we identify several important goals of the field and describe how current research addresses them.</i>
+                    </div>
+                </div>
+            </li>
+
+            <li><a id="americasnlp2021"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Moses and the Character-Based Random Babbling Baseline: CoAStaL at AmericasNLP 2021 Shared Task</i></b>.
+                        <br>
+                        Marcel Bollmann, Rahul Aralikatte, Héctor Murrieta Bello, <b>Daniel Hershcovich</b>, Miryam de Lhoneux, Anders Søgaard.<br>
+                        <a href='http://turing.iimas.unam.mx/americasnlp/index.html' target="_blank">AmericasNLP Shared Task 2021</a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#americasnlp2021_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="https://aclanthology.org/2021.americasnlp-1.28/"
+                           class="btn btn-outline-primary btn-sm">Anthology</a>
+                        <a href="americasnlp2021.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="americasnlp2021_abstract" class="abstract row" style="display:none;">
+                        <i>We evaluated a range of neural machine translation techniques developed specifically for low-resource scenarios. Unsuccessfully. In the end, we submitted two runs: (i) a standard phrase-based model, and (ii) a random babbling baseline using character trigrams. We found that it was surprisingly hard to beat (i), in spite of this model being, in theory, a bad fit for polysynthetic languages; and more interestingly, that (ii) was better than several of the submitted systems, highlighting how difficult low-resource machine translation for polysynthetic languages is.</i>
+                    </div>
+                </div>
+            </li>
+
             <li><a id="debater"></a>
                 <div class="row">
                     <div class="col-md-4">
@@ -417,27 +502,6 @@ To help bridge this gap and unlock the potential of large-scale idea mining, we 
                             in the official ranking, according to average ELAS. Our parser demonstrates that a unified
                             pipeline is effective for both Meaning Representation Parsing and Enhanced Universal
                             Dependencies.</i>
-                    </div>
-                </div>
-            </li>
-            
-            <li><a id="streusle-tagger"></a>
-                <div class="row">
-                    <div class="col-md-4">
-                        <b><i>Lexical Semantic Recognition</i></b>.
-                        <br>
-                        Nelson F. Liu, <b>Daniel Hershcovich</b>, Michael Kranzlein, Nathan Schneider.
-                    </div>
-                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
-                        <a href="https://arxiv.org/abs/2004.15008" class="btn btn-outline-primary btn-sm">arXiv</a>
-                        <a href="#" class="btn btn-outline-primary btn-sm"
-                           onclick="$('#streusle-tagger_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                        <a href="streusle-tagger.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                        <a href="https://github.com/nelson-liu/lexical-semantic-recognition"
-                           class="btn btn-outline-primary btn-sm">code</a>
-                    </div>
-                    <div id="streusle-tagger_abstract" class="abstract row" style="display:none;">
-                        <i>Segmentation and (segment) labeling are generally treated separately in lexical semantics, raising issues due to their close inter-dependence and necessitating joint annotation. We therefore investigate the lexical semantic recognition task of multiword expression segmentation and supersense disambiguation, unifying several previously-disparate styles of lexical semantic annotation. We evaluate a neural CRF model along all annotation axes available in version 4.3 of the STREUSLE corpus: lexical unit segmentation (multiword expressions), word-level syntactic tags, and supersense classes for noun, verb, and preposition/possessive units. As the label set generalizes that of previous tasks (DiMSUM, PARSEME), we additionally evaluate how well the model generalizes to those test sets, with encouraging results. By establishing baseline models and evaluation metrics, we pave the way for comprehensive and accurate modeling of lexical semantics.</i>
                     </div>
                 </div>
             </li>
