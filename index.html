@@ -113,6 +113,27 @@
 
     <div class="publications">
         <ul>
+            <li><a id="mcwq"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Multilingual Compositional Wikidata Questions</i></b>.
+                        <br>Ruixiang Cui Rahul Aralikatte, Heather Lent and <b>Daniel Hershcovich</b>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2108.03509" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#mcwq_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="mcwq.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="https://github.com/coastalcph/seq2sparql"
+                           class="btn btn-outline-primary btn-sm">code and data</a>
+                    </div>
+                    <div id="mcwq_abstract" class="abstract row" style="display:none;">
+                        <i>Semantic parsing allows humans to leverage vast knowledge resources through natural interaction. However, parsers are mostly designed for and evaluated on English resources, such as CFQ (Keysers et al., 2020), the current standard benchmark based on English data generated from grammar rules and oriented towards Freebase, an outdated knowledge base. We propose a method for creating a multilingual, parallel dataset of question-query pairs, grounded in Wikidata, and introduce such a dataset called Compositional Wikidata Questions (CWQ). We utilize this data to train and evaluate semantic parsers for Hebrew, Kannada, Chinese and English, to better understand the current strengths and weaknesses of multilingual semantic parsing. Experiments on zero-shot cross-lingual transfer demonstrate that models fail to generate valid queries even with pretrained multilingual encoders. Our methodology, dataset and results will facilitate future research on semantic parsing in more realistic and diverse settings than has been possible with existing resources.
+                        </i>
+                    </div>
+                </div>
+            </li>
+
             <li><a id="iwpt2021"></a>
                 <div class="row">
                     <div class="col-md-4">
