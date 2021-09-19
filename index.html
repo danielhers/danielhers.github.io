@@ -129,6 +129,16 @@
                         <br>Mostafa Abdou, Artur Kulmizev, <b>Daniel Hershcovich</b>, Stella Frank, Ellie Pavlick and Anders Søgaard.<br>
                         <a href='https://conll.org/2021' target="_blank">CoNLL 2021</a>.
                     </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2109.06129" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#conll21-color_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="conll21-color.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="conll21-color_abstract" class="abstract row" style="display:none;">
+                        <i>Pretrained language models have been shown to encode relational information, such as the relations between entities or concepts in knowledge-bases -- (Paris, Capital, France). However, simple relations of this type can often be recovered heuristically and the extent to which models implicitly reflect topological structure that is grounded in world, such as perceptual structure, is unknown. To explore this question, we conduct a thorough case study on color. Namely, we employ a dataset of monolexemic color terms and color chips represented in CIELAB, a color space with a perceptually meaningful distance metric.
+                            Using two methods of evaluating the structural alignment of colors in this space with text-derived color term representations, we find significant correspondence. Analyzing the differences in alignment across the color spectrum, we find that warmer colors are, on average, better aligned to the perceptual color space than cooler ones, suggesting an intriguing connection to findings from recent work on efficient communication in color naming. Further analysis suggests that differences in alignment are, in part, mediated by collocationality and differences in syntactic usage, posing questions as to the relationship between color perception and usage and context.</i>
+                    </div>
                 </div>
             </li>
 
