@@ -119,6 +119,14 @@
                         <br>Mareike Hartmann, Miryam de Lhoneux, <b>Daniel Hershcovich</b>, Yova Kementchedjhieva, Lukas Nielsen, Chen Qiu and Anders Søgaard.<br>
                         <a href='https://conll.org/2021' target="_blank">CoNLL 2021</a>.
                     </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#conll21-negation_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="conll21-negation.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="conll21-negation_abstract" class="abstract row" style="display:none;">
+                        <i>Negation is one of the most fundamental concepts in human cognition and language, and several natural language inference (NLI) probes have been designed to investigate pretrained language models' ability to detect and reason with negation. However, the existing probing datasets are limited to English only, and do not enable controlled probing of performance in the absence or presence of negation. In response, we present a multilingual (English, Bulgarian, German, French and Chinese) benchmark collection of NLI examples that are grammatical and correctly labeled, as a result of manual inspection and editing. We use the benchmark to probe the negation-awareness of multilingual language models and find that models that correctly predict examples with negation cues often fail to correctly predict their counter-examples {\em without} negation cues, even when the cues are irrelevant for semantic inference.</i>
+                    </div>
                 </div>
             </li>
 
