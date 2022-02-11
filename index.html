@@ -108,6 +108,27 @@
 
     <div class="publications">
         <ul>
+            <li><a id="inspiration"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Scaling Creative Inspiration with Fine-Grained Functional Facets of Product Ideas</i></b>.
+                        <br>
+                        Tom Hope, Ronen Tamari, Hyeonsu Kang, <b>Daniel Hershcovich</b>, Joel Chan, Aniket Kittur and Dafna Shahaf.
+                        <a href="https://chi2022.acm.org/">CHI 2022</a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="https://arxiv.org/abs/2102.09761" class="btn btn-outline-primary btn-sm">arXiv</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#inspiration_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="inspiration.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="inspiration_abstract" class="abstract row" style="display:none;">
+                        <i>Web-scale repositories of products, patents and scientific papers offer an opportunity for creating automated systems that scour millions of ideas and assist users in discovering inspirations and solutions. Yet the common representation of ideas is in the form of raw textual descriptions, lacking important structure that is required for supporting creative innovation. Prior work has pointed to the importance of functional structure -- capturing the mechanisms and purposes of inventions -- for allowing users to discover structural connections across ideas and creatively adapt existing technologies. However, the use of functional representations was either coarse and limited in expressivity, or dependent on curated knowledge bases with poor coverage and significant manual effort from users.
+To help bridge this gap and unlock the potential of large-scale idea mining, we propose a novel computational representation that automatically breaks up products into fine-grained functional facets. We train a model to extract these facets from a challenging real-world corpus of invention descriptions, and represent each product as a set of facet embeddings. We design similarity metrics that support granular matching between functional facets across ideas, and use them to build a novel functional search capability that enables expressive queries for mechanisms and purposes. We construct a graph capturing hierarchical relations between purposes and mechanisms across an entire corpus of products, and use the graph to help problem-solvers explore the design space around a focal problem and view related problem perspectives. In empirical user studies, our approach leads to a significant boost in search accuracy and in the quality of creative inspirations, outperforming strong baselines and state-of-art representations of product texts by 50-60%.</i>
+                    </div>
+                </div>
+            </li>
+
             <li><a id="conll21-negation"></a>
                 <div class="row">
                     <div class="col-md-4">
@@ -299,26 +320,6 @@
                     </div>
                     <div id="debater_abstract" class="abstract row" style="display:none;">
                         <i>Artificial intelligence (AI) is defined as the ability of machines to perform tasks that are usually associated with intelligent beings. Argument and debate are fundamental capabilities of human intelligence, essential for a wide range of human activities, and common to all human societies. The development of computational argumentation technologies is therefore an important emerging discipline in AI research1. Here we present Project Debater, an autonomous debating system that can engage in a competitive debate with humans. We provide a complete description of the system’s architecture, a thorough and systematic evaluation of its operation across a wide range of debate topics, and a detailed account of the system’s performance in its public debut against three expert human debaters. We also highlight the fundamental differences between debating with humans as opposed to challenging humans in game competitions, the latter being the focus of classical ‘grand challenges’ pursued by the AI research community over the past few decades. We suggest that such challenges lie in the ‘comfort zone’ of AI, whereas debating with humans lies in a different territory, in which humans still prevail, and for which novel paradigms are required to make substantial progress.</i>
-                    </div>
-                </div>
-            </li>
-
-            <li><a id="inspiration"></a>
-                <div class="row">
-                    <div class="col-md-4">
-                        <b><i>Scaling Creative Inspiration with Fine-Grained Functional Facets of Product Ideas</i></b>.
-                        <br>
-                        Tom Hope, Ronen Tamari, Hyeonsu Kang, <b>Daniel Hershcovich</b>, Joel Chan, Aniket Kittur and Dafna Shahaf.
-                    </div>
-                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
-                        <a href="https://arxiv.org/abs/2102.09761" class="btn btn-outline-primary btn-sm">arXiv</a>
-                        <a href="#" class="btn btn-outline-primary btn-sm"
-                           onclick="$('#inspiration_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                        <a href="inspiration.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                    </div>
-                    <div id="inspiration_abstract" class="abstract row" style="display:none;">
-                        <i>Web-scale repositories of products, patents and scientific papers offer an opportunity for creating automated systems that scour millions of ideas and assist users in discovering inspirations and solutions. Yet the common representation of ideas is in the form of raw textual descriptions, lacking important structure that is required for supporting creative innovation. Prior work has pointed to the importance of functional structure -- capturing the mechanisms and purposes of inventions -- for allowing users to discover structural connections across ideas and creatively adapt existing technologies. However, the use of functional representations was either coarse and limited in expressivity, or dependent on curated knowledge bases with poor coverage and significant manual effort from users.
-To help bridge this gap and unlock the potential of large-scale idea mining, we propose a novel computational representation that automatically breaks up products into fine-grained functional facets. We train a model to extract these facets from a challenging real-world corpus of invention descriptions, and represent each product as a set of facet embeddings. We design similarity metrics that support granular matching between functional facets across ideas, and use them to build a novel functional search capability that enables expressive queries for mechanisms and purposes. We construct a graph capturing hierarchical relations between purposes and mechanisms across an entire corpus of products, and use the graph to help problem-solvers explore the design space around a focal problem and view related problem perspectives. In empirical user studies, our approach leads to a significant boost in search accuracy and in the quality of creative inspirations, outperforming strong baselines and state-of-art representations of product texts by 50-60%.</i>
                     </div>
                 </div>
             </li>
