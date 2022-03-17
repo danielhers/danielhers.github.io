@@ -108,6 +108,25 @@
 
     <div class="publications">
         <ul>
+            <li><a id="taylor"></a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <b><i>Evaluating Deep Taylor Decomposition for Reliability Assessment in the Wild</i></b>.
+                        <br>
+                        Stephanie Brandl, <b>Daniel Hershcovich</b> and Anders Søgaard.
+                        <a href="https://www.icwsm.org/2022/">ICWSM 2022</a>.
+                    </div>
+                    <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#taylor_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                        <a href="taylor.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                    </div>
+                    <div id="taylor_abstract" class="abstract row" style="display:none;">
+                      We argue that we need to evaluate model interpretability methods in the wild, in situations where professionals make critical decisions, and models can potentially assist them. We present an in-the-wild evaluation of token attribution based on Deep Taylor Decomposition, with professional journalists performing reliability assessments. We find that using this method in conjunction with RoBERTa-Large, fine-tuned on the Gossip Corpus, led to faster and better human decision-making, as well as a more critical attitude toward news sources among the journalists. We present a comparison of human and model rationales, as well as a qualitative analysis of the journalists' experiences with machine-in-the-loop decision making.
+                    </div>
+                </div>
+            </li>
+
             <li><a id="xculture"></a>
                 <div class="row">
                     <div class="col-md-4">
@@ -117,7 +136,13 @@
                         <a href="https://2022.aclweb.org/">ACL 2022</a>.
                     </div>
                     <div class="row col-md-3 btn-group mr-2 v-center" role="group">
+                        <a href="xculture.pdf" class="btn btn-outline-primary btn-sm bib">pdf</a>
                         <a href="xculture.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm"
+                           onclick="$('#xculture_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                    </div>
+                    <div id="xculture_abstract" class="abstract row" style="display:none;">
+                      Various efforts in the Natural Language Processing (NLP) community have been made to accommodate linguistic diversity and serve speakers of many different languages. However, it is important to acknowledge that speakers and the content they produce and require, vary not just by language, but also by culture. Although language and culture are tightly linked, there are important differences. Analogous to cross-lingual and multilingual NLP, cross-cultural and multicultural NLP considers these differences in order to better serve users of NLP systems. We propose a principled framework to frame these efforts, and survey existing and potential strategies.
                     </div>
                 </div>
             </li>
