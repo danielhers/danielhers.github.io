@@ -110,6 +110,28 @@
 
             <div class="publications">
                 <ul>
+                    <li><a id="mcwq"></a>
+                        <div class="row">
+                            <div class="col">
+                                <b><i>Compositional Generalization in Multilingual Semantic Parsing over Wikidata</i></b>.
+                                <br>Ruixiang Cui, Rahul Aralikatte, Heather Lent and <b>Daniel Hershcovich</b>.
+                                <a href="https://transacl.org/">TACL</a>, 2022.
+                            </div>
+                            <div class="col btn-group mr-2 v-center" role="group">
+                                <a href="https://arxiv.org/abs/2108.03509" class="btn btn-outline-primary btn-sm">preprint</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm"
+                                   onclick="$('#mcwq_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                <a href="mcwq.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                <a href="https://github.com/coastalcph/seq2sparql"
+                                   class="btn btn-outline-primary btn-sm">code and data</a>
+                            </div>
+                            <div id="mcwq_abstract" class="abstract row" style="display:none;">
+                                <i>Semantic parsing (SP) allows humans to leverage vast knowledge resources through natural interaction. However, parsers are mostly designed for and evaluated on English resources, such as CFQ (Keysers et al., 2020), the current standard benchmark based on English data generated from grammar rules and oriented towards Freebase, an outdated knowledge base. We propose a method for creating a multilingual, parallel dataset of question-query pairs, grounded in Wikidata. We introduce such a dataset, which we call Multilingual Compositional Wikidata Questions (MCWQ), and use it to analyze the compositional generalization of semantic parsers in Hebrew, Kannada, Chinese and English. While within-language generalization is comparable across languages, experiments on zero-shot cross-lingual transfer demonstrate that cross-lingual compositional generalization fails, even with state-of-the-art pretrained multilingual encoders. Furthermore, our methodology, dataset and results will facilitate future research on SP in more realistic and diverse settings than has been possible with existing resources.
+                                </i>
+                            </div>
+                        </div>
+                    </li>
+
                     <li><a id="green"></a>
                         <div class="row">
                             <div class="col">
@@ -252,27 +274,6 @@
                             <div id="conll21-color_abstract" class="abstract row" style="display:none;">
                                 <i>Pretrained language models have been shown to encode relational information, such as the relations between entities or concepts in knowledge-bases -- (Paris, Capital, France). However, simple relations of this type can often be recovered heuristically and the extent to which models implicitly reflect topological structure that is grounded in world, such as perceptual structure, is unknown. To explore this question, we conduct a thorough case study on color. Namely, we employ a dataset of monolexemic color terms and color chips represented in CIELAB, a color space with a perceptually meaningful distance metric.
                                     Using two methods of evaluating the structural alignment of colors in this space with text-derived color term representations, we find significant correspondence. Analyzing the differences in alignment across the color spectrum, we find that warmer colors are, on average, better aligned to the perceptual color space than cooler ones, suggesting an intriguing connection to findings from recent work on efficient communication in color naming. Further analysis suggests that differences in alignment are, in part, mediated by collocationality and differences in syntactic usage, posing questions as to the relationship between color perception and usage and context.</i>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li><a id="mcwq"></a>
-                        <div class="row">
-                            <div class="col">
-                                <b><i>Multilingual Compositional Wikidata Questions</i></b>.
-                                <br>Ruixiang Cui, Rahul Aralikatte, Heather Lent and <b>Daniel Hershcovich</b>.
-                            </div>
-                            <div class="col btn-group mr-2 v-center" role="group">
-                                <a href="https://arxiv.org/abs/2108.03509" class="btn btn-outline-primary btn-sm">preprint</a>
-                                <a href="#" class="btn btn-outline-primary btn-sm"
-                                   onclick="$('#mcwq_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                <a href="mcwq.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                <a href="https://github.com/coastalcph/seq2sparql"
-                                   class="btn btn-outline-primary btn-sm">code and data</a>
-                            </div>
-                            <div id="mcwq_abstract" class="abstract row" style="display:none;">
-                                <i>Semantic parsing allows humans to leverage vast knowledge resources through natural interaction. However, parsers are mostly designed for and evaluated on English resources, such as CFQ (Keysers et al., 2020), the current standard benchmark based on English data generated from grammar rules and oriented towards Freebase, an outdated knowledge base. We propose a method for creating a multilingual, parallel dataset of question-query pairs, grounded in Wikidata, and introduce such a dataset called Compositional Wikidata Questions (CWQ). We utilize this data to train and evaluate semantic parsers for Hebrew, Kannada, Chinese and English, to better understand the current strengths and weaknesses of multilingual semantic parsing. Experiments on zero-shot cross-lingual transfer demonstrate that models fail to generate valid queries even with pretrained multilingual encoders. Our methodology, dataset and results will facilitate future research on semantic parsing in more realistic and diverse settings than has been possible with existing resources.
-                                </i>
                             </div>
                         </div>
                     </li>
