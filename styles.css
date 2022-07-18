@@ -76,6 +76,10 @@ body .cv .header {
     color:#1A4D11;
 }
 
+body .cv .header .btn {
+    font-size:unset;
+}
+
 body .cv li {
     margin-bottom:0.3cm;
 }

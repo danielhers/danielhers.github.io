@@ -51,7 +51,7 @@
         <hr>
     </div>
     <div class="row">
-        <div class="col-xs-12">
+        <div id="accordion" class="col-xs-12">
 
             <div class="text" style="text-align:justify">
               <p>Tenure-Track Assistant Professor at <a href="http://coastalcph.github.io" title="NLP research group">CoAStaL</a>,
@@ -79,34 +79,40 @@
 
             <div class="menu"></div>
 
-            <h2 class="header"><a id=news></a>News</h2>
-
-            <div class="news">
-                <ul>
-                  <li>Our paper <a href="#mcwq">Compositional Generalization in Multilingual Semantic Parsing over Wikidata</a> was accepted to TACL!</li>
-                 </ul>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="news" class="btn btn-link" data-toggle="collapse" data-target="#newsList" aria-expanded="true" aria-controls="newsList">News</button>
+              </h2>
+              <div id="newsList" class="contact collapse show" data-parent="#accordion">
+                <div class="news">
+                    <ul class="card-body">
+                      <li>Our paper <a href="#mcwq">Compositional Generalization in Multilingual Semantic Parsing over Wikidata</a> was accepted to TACL!</li>
+                     </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="menu"></div>
-
-            <h2 class="header"><a id=interests></a>Research Interests</h2>
-
-            <div class="interests">
-                <ul>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="interests" class="btn btn-link" data-toggle="collapse" data-target="#interestList" aria-expanded="true" aria-controls="interestList">Research Interests</button>
+              </h2>
+            <div id="interestList" class="contact collapse show" data-parent="#accordion">
+                <ul class="card-body">
                   <li>Cross-cultural and cross-lingual adaptation of (and investigation with) natural language processing models.</li>
                   <li>Interpretable representation of natural language syntax, semantics and pragmatics.</li>
                   <li>Promoting welfare, sustainability and responsible behavior through language technology.</li>
                 </ul>
             </div>
+            </div>
 
-            <div class="menu"></div>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="publications" class="btn btn-link" data-toggle="collapse" data-target="#publicationList" aria-expanded="true" aria-controls="publicationList">Publications</button>(<a href="http://scholar.google.com/citations?user=479qIucAAAAJ" target="_blank">on Google Scholar</a>,
+                <a href="https://www.semanticscholar.org/author/Daniel-Hershcovich/2086349" target="_blank">on Semantic Scholar</a>)
+              </h2>
 
-            <h2 class="header" style="display: inline"><a id=publications></a>Publications</h2>
-            (<a href="http://scholar.google.com/citations?user=479qIucAAAAJ" target="_blank">on Google Scholar</a>,
-            <a href="https://www.semanticscholar.org/author/Daniel-Hershcovich/2086349" target="_blank">on Semantic Scholar</a>)
-
-            <div class="publications">
-                <ul>
+            <div id="publicationList" class="publications collapse show" data-parent="#accordion">
+                <ul class="card-body">
                     <li><a id="mcwq"></a>
                         <div class="row">
                             <div class="col">
@@ -1315,11 +1321,14 @@
                     </li>
                 </ul>
             </div>
+            </div>
 
-            <div class="menu"></div>
-
-            <h2 class="header"><a id="talks"></a>Talks</h2>
-            <ul>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="talks" class="btn btn-link" data-toggle="collapse" data-target="#talkList" aria-expanded="true" aria-controls="talkList">Talks</button>
+              </h2>
+            <div id="talkList" class="talks collapse show" data-parent="#accordion">
+                <ul class="card-body">
                 <li>
                     <a href="iscol2016_slides.pdf">
                         <i>Broad-Coverage Semantic Parsing: A Transition-Based Approach</i>
@@ -1440,57 +1449,67 @@
                     <a href="http://mousse-project.org/events/event-a5f3r5.html">Workshop on Ten Years of BabelNet and Multilingual Neurosymbolic Natural Language Understanding</a>, <a href="http://nlp.uniroma1.it/">Sapienza University of Rome</a> (07/2022)
                 </li>
             </ul>
+            </div>
+            </div>
 
-            <div class="menu"></div>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="teaching" class="btn btn-link" data-toggle="collapse" data-target="#teachingList" aria-expanded="true" aria-controls="teachingList">Teaching</button>
+              </h2>
+            <div id="teachingList" class="teaching collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  <h3 class="header">Hebrew University of Jerusalem</h3>
+                  <ul>
+                      <li>
+                          <div class="row">
+                              <div class="col">
+                                  Human Language from a Computational Perspective (TA):
+                                  <a href="http://moodle.huji.ac.il/hu14/course/view.php?id=67127">2014</a>,
+                                  <a href="http://moodle.huji.ac.il/hu15/course/view.php?id=67127">2015</a>,
+                                  <a href="http://moodle2.cs.huji.ac.il/nu16/course/view.php?id=67127">2016</a>,
+                                  <a href="https://moodle2.cs.huji.ac.il/nu17/course/view.php?id=67127">2017</a>
+                              </div>
+                              <div class="col btn-group mr-2 v-center" role="group">
+                                  <a href="https://github.com/danielhers/avnei_pina"
+                                     class="btn btn-outline-primary btn-sm">materials</a>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <h3 class="header">University of Copenhagen</h3>
+                  <ul>
+                      <li>
+                          <div class="row">
+                              <div class="col">
+                                  Natural Language Processing:
+                                  <a href="https://kurser.ku.dk/course/ndak18000u/2019-2020">2019</a>,
+                                  <a href="https://kurser.ku.dk/course/ndak18000u/2020-2021">2020</a>
+                              </div>
+                              <div class="col btn-group mr-2 v-center" role="group">
+                                  <a href="https://github.com/copenlu/stat-nlp-book"
+                                     class="btn btn-outline-primary btn-sm">materials</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col">
+                                  Introduction to Machine Learning:
+                                  <a href="https://kurser.ku.dk/course/ndab20000u/2020-2021">2020</a>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+            </div>
 
-            <h2 class="header"><a id="teaching"></a>Teaching</h2>
-            <h3 class="header">Hebrew University of Jerusalem</h3>
-            <ul>
-                <li>
-                    <div class="row">
-                        <div class="col">
-                            Human Language from a Computational Perspective (TA):
-                            <a href="http://moodle.huji.ac.il/hu14/course/view.php?id=67127">2014</a>,
-                            <a href="http://moodle.huji.ac.il/hu15/course/view.php?id=67127">2015</a>,
-                            <a href="http://moodle2.cs.huji.ac.il/nu16/course/view.php?id=67127">2016</a>,
-                            <a href="https://moodle2.cs.huji.ac.il/nu17/course/view.php?id=67127">2017</a>
-                        </div>
-                        <div class="col btn-group mr-2 v-center" role="group">
-                            <a href="https://github.com/danielhers/avnei_pina"
-                               class="btn btn-outline-primary btn-sm">materials</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="header">University of Copenhagen</h3>
-            <ul>
-                <li>
-                    <div class="row">
-                        <div class="col">
-                            Natural Language Processing:
-                            <a href="https://kurser.ku.dk/course/ndak18000u/2019-2020">2019</a>,
-                            <a href="https://kurser.ku.dk/course/ndak18000u/2020-2021">2020</a>
-                        </div>
-                        <div class="col btn-group mr-2 v-center" role="group">
-                            <a href="https://github.com/copenlu/stat-nlp-book"
-                               class="btn btn-outline-primary btn-sm">materials</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col">
-                            Introduction to Machine Learning:
-                            <a href="https://kurser.ku.dk/course/ndab20000u/2020-2021">2020</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2 class="header"><a id="community"></a>Community</h2>
-            <ul>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="community" class="btn btn-link" data-toggle="collapse" data-target="#communityList" aria-expanded="true" aria-controls="communityList">Community</button>
+              </h2>
+            <div id="communityList" class="community collapse show" data-parent="#accordion">
+                <ul class="card-body">
                 <li>Workshop co-chair for EMNLP 2022.</li>
                 <li>Co-organized <a href="iscol2017">ISCOL 2017</a>,
                     the annual meeting of the Israeli seminar on computational linguistics,
@@ -1544,11 +1563,15 @@
                     <a href="https://www.springer.com/journal/10579">Language Resources and Evaluation</a>.
                 </li>
             </ul>
+            </div>
+            </div>
 
-            <hr>
-
-            <h2 class="header"><a id="misc"></a>Miscellaneous</h2>
-            <ul>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="misc" class="btn btn-link" data-toggle="collapse" data-target="#miscList" aria-expanded="true" aria-controls="miscList">Miscellaneous</button>
+              </h2>
+            <div id="miscList" class="misc collapse show" data-parent="#accordion">
+                <ul class="card-body">
                 <li>I practice Kendo (Japanese fencing). I was even at the World Championships in
                     <a href="#" onclick="return showImage('wkc16');">Japan (2015)</a> and
                     <a href="#" onclick="return showImage('wkc17');">Korea (2018)</a>.
@@ -1556,12 +1579,16 @@
                     <div id="wkc17" style="display: none"><img src="" style="width: 60%" alt="WKC17"/></div>
                 </li>
             </ul>
+            </div>
+            </div>
 
-            <hr>
-
-            <h2 class="header"><a id="contact_info"></a>Contact Info</h2>
-
-            <p>Daniel Hershcovich<br>
+            <div class="card">
+              <h2 class="header card-header" style="display: inline">
+                <button id="contact_info" class="btn btn-link" data-toggle="collapse" data-target="#contactList" aria-expanded="true" aria-controls="contactList">Contact</button>
+              </h2>
+            <div id="contactList" class="contact collapse show" data-parent="#accordion">
+                <p class="card-body">
+            Daniel Hershcovich<br>
                 <a href="https://di.ku.dk/english" target="_blank">Department of Computer Science</a><br>
                 <a href="https://www.ku.dk/english" target="_blank">University of Copenhagen</a> <br>
                 Lyngbyvej 2<br>
@@ -1571,8 +1598,9 @@
                     d...
                 </a>@di.ku.dk
             </p>
+            </div>
+            </div>
 
-            <div class="menu"></div>
         </div>
     </div>
 </div>
