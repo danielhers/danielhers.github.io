@@ -106,12 +106,56 @@
 
             <div class="card">
                 <h2 class="header card-header" style="display: inline">
-                    <button id="publications" class="btn btn-link" data-toggle="collapse" data-target="#publicationList" aria-expanded="true" aria-controls="publicationList">Publications</button>(<a href="http://scholar.google.com/citations?user=479qIucAAAAJ" target="_blank">on Google Scholar</a>,
-                    <a href="https://www.semanticscholar.org/author/Daniel-Hershcovich/2086349" target="_blank">on Semantic Scholar</a>)
+                    <button id="publications" class="btn btn-link" data-toggle="collapse" data-target="#publicationList" aria-expanded="true" aria-controls="publicationList">Publications</button>(<a href="http://scholar.google.com/citations?user=479qIucAAAAJ" target="_blank">Google Scholar</a>,
+                    <a href="https://www.semanticscholar.org/author/Daniel-Hershcovich/2086349" target="_blank">Semantic Scholar</a>)
                 </h2>
 
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
+                      <h3 class="header">Preprints</h3>
+                        <li><a id="green"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Towards Climate Awareness in NLP Research</i></b>.
+                                    <br>
+                                    <b>Daniel Hershcovich</b>, Nicolas Webersinke, Mathias Kraus, Julia Anna Bingler and Markus Leippold.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://arxiv.org/abs/2205.05071" class="btn btn-outline-primary btn-sm">preprint</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#green_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="green.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="https://github.com/danielhers/climate-awareness-nlp"
+                                       class="btn btn-outline-primary btn-sm">code</a>
+                                </div>
+                                <div id="green_abstract" class="abstract row" style="display:none;">
+                                    The climate impact of AI, and NLP research in particular, has become a serious issue given the enormous amount of energy that is increasingly being used for training and running computational models. Consequently, increasing focus is placed on efficient NLP. However, this important initiative lacks simple guidelines that would allow for systematic climate reporting of NLP research. We argue that this deficiency is one of the reasons why very few publications in NLP report key figures that would allow a more thorough examination of environmental impact. As a remedy, we propose a climate performance model card with the primary purpose of being practically usable with only limited information about experiments and the underlying computer hardware. We describe why this step is essential to increase awareness about the environmental impact of NLP research and, thereby, paving the way for more thorough discussions.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a id="cognitive-mr"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Does injecting linguistic structure into language models lead to better alignment with brain recordings?</i></b>.
+                                    <br>
+                                    Mostafa Abdou, Ana Valeria Gonzalez, Mariya Toneva, <b>Daniel Hershcovich</b> and Anders Søgaard.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://arxiv.org/abs/2101.12608" class="btn btn-outline-primary btn-sm">preprint</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#cognitive-mr_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="cognitive-mr.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="https://github.com/mhany90/Structural_bias_brain"
+                                       class="btn btn-outline-primary btn-sm">code</a>
+                                </div>
+                                <div id="cognitive-mr_abstract" class="abstract row" style="display:none;">
+                                    <i>Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman, 2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</i>
+                                </div>
+                            </div>
+                        </li>
+
+                      <h3 class="header">Peer-Reviewed Publications</h3>
                         <li><a id="mcwq"></a>
                             <div class="row">
                                 <div class="col">
@@ -134,34 +178,13 @@
                             </div>
                         </li>
 
-                        <li><a id="green"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Towards Climate Awareness in NLP Research</i></b>.
-                                    <br>
-                                    <b>Daniel Hershcovich</b>, Nicolas Webersinke, Mathias Kraus, Julia Anna Bingler and Markus Leippold.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="https://arxiv.org/abs/2205.05071" class="btn btn-outline-primary btn-sm">preprint</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#green_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="green.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="https://github.com/danielhers/climate-awareness-nlp"
-                                       class="btn btn-outline-primary btn-sm">code</a>
-                                </div>
-                                <div id="green_abstract" class="abstract row" style="display:none;">
-                                    The climate impact of AI, and NLP research in particular, has become a serious issue given the enormous amount of energy that is increasingly being used for training and running computational models. Consequently, increasing focus is placed on efficient NLP. However, this important initiative lacks simple guidelines that would allow for systematic climate reporting of NLP research. We argue that this deficiency is one of the reasons why very few publications in NLP report key figures that would allow a more thorough examination of environmental impact. As a remedy, we propose a climate performance model card with the primary purpose of being practically usable with only limited information about experiments and the underlying computer hardware. We describe why this step is essential to increase awareness about the environmental impact of NLP research and, thereby, paving the way for more thorough discussions.
-                                </div>
-                            </div>
-                        </li>
-
                         <li><a id="gqnli"></a>
                             <div class="row">
                                 <div class="col">
                                     <b><i>Generalized Quantifiers as a Source of Error in Multilingual NLU Benchmarks</i></b>.
                                     <br>
                                     Ruixiang Cui, <b>Daniel Hershcovich</b> and Anders Søgaard.
-                                    <a href="https://2022.naacl.org/">NAACL 2022</a>.
+                                    <a href="https://2022.naacl.org/">NAACL 2022</a> (long paper).
                                 </div>
                                 <div class="col btn-group mr-2 v-center" role="group">
                                     <a href="https://aclanthology.org/2022.naacl-main.359/" class="btn btn-outline-primary btn-sm">proceedings</a>
@@ -203,7 +226,7 @@
                                     <b><i>Challenges and Strategies in Cross-Cultural NLP</i></b>.
                                     <br>
                                     <b>Daniel Hershcovich</b>, Stella Frank, Heather Lent, Miryam de Lhoneux, Mostafa Abdou, Stephanie Brandl, Emanuele Bugliarello, Laura Cabello Piqueras, Ilias Chalkidis, Ruixiang Cui, Constanza Fierro, Katerina Margatina, Phillip Rust and Anders Søgaard.
-                                    <a href="https://2022.aclweb.org/">ACL 2022</a>.
+                                    <a href="https://2022.aclweb.org/">ACL 2022</a> (long paper).
                                 </div>
                                 <div class="col btn-group mr-2 v-center" role="group">
                                     <a href="https://aclanthology.org/2022.acl-long.482/" class="btn btn-outline-primary btn-sm">proceedings</a>
@@ -418,27 +441,6 @@
                             </div>
                         </li>
 
-                        <li><a id="cognitive-mr"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Does injecting linguistic structure into language models lead to better alignment with brain recordings?</i></b>.
-                                    <br>
-                                    Mostafa Abdou, Ana Valeria Gonzalez, Mariya Toneva, <b>Daniel Hershcovich</b> and Anders Søgaard.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="https://arxiv.org/abs/2101.12608" class="btn btn-outline-primary btn-sm">preprint</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#cognitive-mr_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="cognitive-mr.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="https://github.com/mhany90/Structural_bias_brain"
-                                       class="btn btn-outline-primary btn-sm">code</a>
-                                </div>
-                                <div id="cognitive-mr_abstract" class="abstract row" style="display:none;">
-                                    <i>Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman, 2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</i>
-                                </div>
-                            </div>
-                        </li>
-
                         <li><a id="srl-coref-rl"></a>
                             <div class="row">
                                 <div class="col">
@@ -457,29 +459,6 @@
                                 </div>
                                 <div id="srl_coref_rl_abstract" class="abstract row" style="display:none;">
                                     <i>Coreference resolution and semantic role labeling are NLP tasks that capture different aspects of semantics, indicating respectively, which expressions refer to the same entity, and what semantic roles expressions serve in the sentence. However, they are often closely interdependent, and both generally necessitate natural language understanding. Do they form a coherent abstract representation of documents? We present a neural network architecture for joint coreference resolution and semantic role labeling for English, and train graph neural networks to model the 'coherence' of the combined shallow semantic graph. Using the resulting coherence score as a reward for our joint semantic analyzer, we use reinforcement learning to encourage global coherence over the document and between semantic annotations. This leads to improvements on both tasks in multiple datasets from different domains, and across a range of encoders of different expressivity, calling, we believe, for a more holistic approach for semantics in NLP.
-                                    </i>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li><a id="ucca_tutorial_coling2020"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Cross-lingual Semantic Representation for NLP with UCCA</i></b>.
-                                    <br>Omri Abend, Dotan Dvir, <b>Daniel Hershcovich</b>, Jakob Prange and Nathan Schneider.<br>
-                                    <a href='https://coling2020.org/pages/tutorials' target="_blank">COLING 2020 tutorial</a>.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="https://www.aclweb.org/anthology/2020.coling-tutorials.1/"
-                                       class="btn btn-outline-primary btn-sm">proceedings</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#ucca_tutorial_coling2020_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="2020.coling-tutorials.1.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="https://github.com/UniversalConceptualCognitiveAnnotation/tutorial" class="btn btn-outline-primary btn-sm">slides</a>
-                                    <a href="https://github.com/UniversalConceptualCognitiveAnnotation/tutorial/releases/tag/coling2020" class="btn btn-outline-primary btn-sm">videos</a>
-                                </div>
-                                <div id="ucca_tutorial_coling2020_abstract" class="abstract row" style="display:none;">
-                                    <i>This is an introductory tutorial to UCCA (Universal Conceptual Cognitive Annotation), a cross-linguistically applicable framework for semantic representation, with corpora annotated in English, German and French, and ongoing annotation in Russian and Hebrew. UCCA builds on extensive typological work and supports rapid annotation. The tutorial will provide a detailed introduction to the UCCA annotation guidelines, design philosophy and the available resources; and a comparison to other meaning representations. It will also survey the existing parsing work, including the findings of three recent shared tasks, in SemEval and CoNLL, that addressed UCCA parsing. Finally, the tutorial will present recent applications and extensions to the scheme, demonstrating its value for natural language processing in a range of languages and domains.
                                     </i>
                                 </div>
                             </div>
@@ -684,72 +663,6 @@
                             </div>
                         </li>
 
-                        <li><a id="thesis"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Universal Semantic Parsing with Neural Networks</i></b>.
-                                    <br>
-                                    <b>Daniel Hershcovich</b>.<br>
-                                    <a href="https://huji-primo.hosted.exlibrisgroup.com/permalink/f/att40d/972HUJI_ALMA21257777500003701">PhD
-                                        thesis, Hebrew University of Jerusalem</a>, 2019.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="thesis.pdf"
-                                       class="btn btn-outline-primary btn-sm">pdf</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#thesis_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="thesis.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="thesis_slides.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-                                </div>
-                                <div id="thesis_abstract" class="abstract row" style="display:none;">
-                                    <i>A major scientific effort is dedicated to natural language understanding, which aims to be
-                                        able to comprehend text, reason about it, and act upon it in an intelligent way. While
-                                        specific use-cases or benchmarks can be solved with relatively simple systems, which either
-                                        ignore word order ("bag-of-words" models) or treat it as a simple linear structure (such as
-                                        the popular sequence-to-sequence framework allowing neural networks to learn tasks in an
-                                        end-to-end fashion), understanding human language in general requires a hierarchical
-                                        representation of meaning. Constructing this representation from text has been the goal of
-                                        an extensive line of work in semantic parsing. While many semantic representation schemes
-                                        have been proposed, they share many of their basic distinctions, such as between predicates
-                                        (relations, states and events) and arguments (participants). This thesis focuses on a
-                                        particular semantic representation scheme called Universal Conceptual Cognitive Annotation
-                                        (UCCA), whose main design principles are support for all major linguistic semantic
-                                        phenomena, cross-linguistic applicability, stability across translations, ease of annotation
-                                        (even by those who are not experts in linguistics), and a modular architecture supporting
-                                        multiple layers of semantic annotation. A fully automatic parser is presented, and evaluated
-                                        on multiple languages (English, French and German). The parser, titled "TUPA"
-                                        (transition-based UCCA parser), is able to learn very general graph structures: directed
-                                        acyclic graphs over token sequences with non-terminal nodes for complex units, where these
-                                        may cover discontinuous terminal yields. This general class of graphs covers the structures
-                                        annotated in UCCA, as well as other representation schemes. TUPA is implemented as a
-                                        transition-based parser, whose transition system supports these structural properties. Its
-                                        transition classifier is a neural network equipped with a bidirectional long short-term
-                                        memory (BiLSTM) module for calculating feature representations for the input. In an
-                                        extensive comparison to conversion-based methods, as well as other classifier
-                                        implementations, TUPA is shown to outperform all baselines in the task of UCCA parsing in
-                                        both in-domain and out-of-domain settings in three languages. The parser is subsequently
-                                        applied to two other semantic representation schemes, DM and AMR, and to syntactic
-                                        dependencies in the Universal Dependencies (UD) scheme. This demonstrates that the flexible
-                                        parser is usable not just for UCCA parsing. Furthermore, training TUPA in a multitask
-                                        setting on all of these schemes improves its UCCA parsing accuracy, by effectively learning
-                                        generalizations across the different representations: a shared model is thus able to apply
-                                        semantic distinctions in one task, which have been learned for another. Finally, in an
-                                        empirical comparison of the content of semantic and syntactic representations, we discover
-                                        several aspects of divergence, i.e., differences in the content captured by these schemes.
-                                        These have profound impact on the potential contribution of syntax to semantic parsing, and
-                                        on the usefulness of each of the approaches for semantic tasks in natural language
-                                        processing. I see semantic parsing as a means for computers to learn language. While
-                                        different representations focus on different distinctions and do so with formally different
-                                        structures, they share an overall goal, which is to support natural language processing
-                                        applications, such as classifying text into categories, tagging it for linguistic
-                                        properties, performing inference and reasoning, and generating new text according to some
-                                        constraints (e.g., machine translation). The combined datasets annotated in every
-                                        representation are an invaluable resource, which, used effectively, can greatly boost our
-                                        achievements in language understanding and processing.
-                                    </i>
-                                </div>
-                            </div>
-                        </li>
                         <li><a id="mrp2019"></a>
                             <div class="row">
                                 <div class="col">
@@ -1121,7 +1034,7 @@
                                     <b><i>A Transition-Based Directed Acyclic Graph Parser for UCCA</i></b>.
                                     <br>
                                     <b>Daniel Hershcovich</b>, Omri Abend and Ari Rappoport.<br>
-                                    <a href='http://acl2017.org' target="_blank">ACL 2017</a> (long paper),
+                                    <a href='http://acl2017.org' target="_blank">ACL 2017</a> (long paper).
                                     <a href='https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/'
                                        target="_blank"><span style="color:red">Outstanding Paper Award</span></a>.
                                 </div>
@@ -1320,6 +1233,100 @@
                                 </div>
                             </div>
                         </li>
+
+                        <h3 class="header">Theses</h3>
+
+                        <li><a id="thesis"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Universal Semantic Parsing with Neural Networks</i></b>.
+                                    <br>
+                                    <b>Daniel Hershcovich</b>.<br>
+                                    <a href="https://huji-primo.hosted.exlibrisgroup.com/permalink/f/att40d/972HUJI_ALMA21257777500003701">PhD
+                                        thesis, Hebrew University of Jerusalem</a>, 2019.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="thesis.pdf"
+                                       class="btn btn-outline-primary btn-sm">pdf</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#thesis_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="thesis.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="thesis_slides.pdf" class="btn btn-outline-primary btn-sm">slides</a>
+                                </div>
+                                <div id="thesis_abstract" class="abstract row" style="display:none;">
+                                    <i>A major scientific effort is dedicated to natural language understanding, which aims to be
+                                        able to comprehend text, reason about it, and act upon it in an intelligent way. While
+                                        specific use-cases or benchmarks can be solved with relatively simple systems, which either
+                                        ignore word order ("bag-of-words" models) or treat it as a simple linear structure (such as
+                                        the popular sequence-to-sequence framework allowing neural networks to learn tasks in an
+                                        end-to-end fashion), understanding human language in general requires a hierarchical
+                                        representation of meaning. Constructing this representation from text has been the goal of
+                                        an extensive line of work in semantic parsing. While many semantic representation schemes
+                                        have been proposed, they share many of their basic distinctions, such as between predicates
+                                        (relations, states and events) and arguments (participants). This thesis focuses on a
+                                        particular semantic representation scheme called Universal Conceptual Cognitive Annotation
+                                        (UCCA), whose main design principles are support for all major linguistic semantic
+                                        phenomena, cross-linguistic applicability, stability across translations, ease of annotation
+                                        (even by those who are not experts in linguistics), and a modular architecture supporting
+                                        multiple layers of semantic annotation. A fully automatic parser is presented, and evaluated
+                                        on multiple languages (English, French and German). The parser, titled "TUPA"
+                                        (transition-based UCCA parser), is able to learn very general graph structures: directed
+                                        acyclic graphs over token sequences with non-terminal nodes for complex units, where these
+                                        may cover discontinuous terminal yields. This general class of graphs covers the structures
+                                        annotated in UCCA, as well as other representation schemes. TUPA is implemented as a
+                                        transition-based parser, whose transition system supports these structural properties. Its
+                                        transition classifier is a neural network equipped with a bidirectional long short-term
+                                        memory (BiLSTM) module for calculating feature representations for the input. In an
+                                        extensive comparison to conversion-based methods, as well as other classifier
+                                        implementations, TUPA is shown to outperform all baselines in the task of UCCA parsing in
+                                        both in-domain and out-of-domain settings in three languages. The parser is subsequently
+                                        applied to two other semantic representation schemes, DM and AMR, and to syntactic
+                                        dependencies in the Universal Dependencies (UD) scheme. This demonstrates that the flexible
+                                        parser is usable not just for UCCA parsing. Furthermore, training TUPA in a multitask
+                                        setting on all of these schemes improves its UCCA parsing accuracy, by effectively learning
+                                        generalizations across the different representations: a shared model is thus able to apply
+                                        semantic distinctions in one task, which have been learned for another. Finally, in an
+                                        empirical comparison of the content of semantic and syntactic representations, we discover
+                                        several aspects of divergence, i.e., differences in the content captured by these schemes.
+                                        These have profound impact on the potential contribution of syntax to semantic parsing, and
+                                        on the usefulness of each of the approaches for semantic tasks in natural language
+                                        processing. I see semantic parsing as a means for computers to learn language. While
+                                        different representations focus on different distinctions and do so with formally different
+                                        structures, they share an overall goal, which is to support natural language processing
+                                        applications, such as classifying text into categories, tagging it for linguistic
+                                        properties, performing inference and reasoning, and generating new text according to some
+                                        constraints (e.g., machine translation). The combined datasets annotated in every
+                                        representation are an invaluable resource, which, used effectively, can greatly boost our
+                                        achievements in language understanding and processing.
+                                    </i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <h3 class="header">Tutorials</h3>
+                        <li><a id="ucca_tutorial_coling2020"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Cross-lingual Semantic Representation for NLP with UCCA</i></b>.
+                                    <br>Omri Abend, Dotan Dvir, <b>Daniel Hershcovich</b>, Jakob Prange and Nathan Schneider.<br>
+                                    <a href='https://coling2020.org/pages/tutorials' target="_blank">COLING 2020 tutorial</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://www.aclweb.org/anthology/2020.coling-tutorials.1/"
+                                       class="btn btn-outline-primary btn-sm">proceedings</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#ucca_tutorial_coling2020_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="2020.coling-tutorials.1.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="https://github.com/UniversalConceptualCognitiveAnnotation/tutorial" class="btn btn-outline-primary btn-sm">slides</a>
+                                    <a href="https://github.com/UniversalConceptualCognitiveAnnotation/tutorial/releases/tag/coling2020" class="btn btn-outline-primary btn-sm">videos</a>
+                                </div>
+                                <div id="ucca_tutorial_coling2020_abstract" class="abstract row" style="display:none;">
+                                    <i>This is an introductory tutorial to UCCA (Universal Conceptual Cognitive Annotation), a cross-linguistically applicable framework for semantic representation, with corpora annotated in English, German and French, and ongoing annotation in Russian and Hebrew. UCCA builds on extensive typological work and supports rapid annotation. The tutorial will provide a detailed introduction to the UCCA annotation guidelines, design philosophy and the available resources; and a comparison to other meaning representations. It will also survey the existing parsing work, including the findings of three recent shared tasks, in SemEval and CoNLL, that addressed UCCA parsing. Finally, the tutorial will present recent applications and extensions to the scheme, demonstrating its value for natural language processing in a range of languages and domains.
+                                    </i>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
