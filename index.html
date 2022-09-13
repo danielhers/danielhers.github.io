@@ -1655,7 +1655,7 @@
                 bibs.slideToggle();
             } else {
                 $.ajax({
-                    crossDomain: true, url: button.attr("href"), dataType: "jsonp", success: function (data) {
+                    crossDomain: true, url: button.attr("href"), dataType: "jsonp", contentType: "text/plain", success: function (data) {
                         container.append("<div id='" + bib_id + "' class='bibtex row' style='display:none;'><pre>" + data + "</pre></div>");
                         $("#" + bib_id).slideToggle();
                     }
