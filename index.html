@@ -169,7 +169,7 @@
                                     <a href="https://arxiv.org/abs/2108.03509" class="btn btn-outline-primary btn-sm">preprint</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#mcwq_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="https://aclanthology.org/2022.tacl-1.55.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="2022.tacl-1.55.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                     <a href="https://github.com/coastalcph/seq2sparql"
                                        class="btn btn-outline-primary btn-sm">code and data</a>
                                 </div>
@@ -193,7 +193,7 @@
                                     <a href="https://arxiv.org/abs/2204.10615" class="btn btn-outline-primary btn-sm">preprint</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#gqnli_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="https://aclanthology.org/2022.naacl-main.359.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="2022.naacl-main.359.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="gqnli_abstract" class="abstract row" style="display:none;">
                                     Logical approaches to representing language have developed and evaluated computational models of quantifier words since the 19th century, but today's NLU models still struggle to capture their semantics. We rely on Generalized Quantifier Theory for language-independent representations of the semantics of quantifier words, to quantify their contribution to the errors of NLU models. We find that quantifiers are pervasive in NLU benchmarks, and their occurrence at test time is associated with performance drops. Multilingual models also exhibit unsatisfying quantifier reasoning abilities, but not necessarily worse for non-English languages. To facilitate directly-targeted probing, we present an adversarial generalized quantifier NLI task (GQNLI) and show that pre-trained language models have a clear lack of robustness in generalized quantifier reasoning.
@@ -236,7 +236,7 @@
                                     <a href="https://arxiv.org/abs/2203.10020" class="btn btn-outline-primary btn-sm">preprint</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#xculture_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="https://aclanthology.org/2022.acl-long.482.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="2022.acl-long.482.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                     <a href="acl2022_xculture_slides.pdf" class="btn btn-outline-primary btn-sm">slides</a>
                                     <a href="acl2022_xculture_poster.pdf" class="btn btn-outline-primary btn-sm">poster</a>
                                 </div>
@@ -1086,7 +1086,7 @@
                                     <a href="https://www.aclweb.org/anthology/W15-0511" class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#negation_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="https://aclweb.org/anthology/W15-0511.bib"
+                                    <a href="W15-0511.bib"
                                        class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="negation_abstract" class="abstract" style="display:none;">
@@ -1120,8 +1120,7 @@
                                        class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#cdcd_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="http://www.aclweb.org/anthology/C14-1141.bib"
-                                       class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="C14-1141.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="cdcd_abstract" class="abstract" style="display:none;">
                                     <i>While discussing a concrete controversial topic, most humans will find it challenging to
@@ -1156,8 +1155,7 @@
                                        class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#acedemo_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="http://www.aclweb.org/anthology/C14-2002.bib"
-                                       class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="C14-2002.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="acedemo_abstract" class="abstract" style="display:none;">
                                     <i>While discussing a concrete controversial topic, most humans will find it challenging to
@@ -1188,8 +1186,7 @@
                                        class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#acelab_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="http://anthology.aclweb.org/W14-2109.bib"
-                                       class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="W14-2109.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="acelab_abstract" class="abstract" style="display:none;">
                                     <i>We describe a novel and unique argumentative structure dataset. This corpus consists of data
@@ -1655,7 +1652,7 @@
                 bibs.slideToggle();
             } else {
                 $.ajax({
-                    crossDomain: true, url: button.attr("href"), dataType: "jsonp", contentType: "text/plain", success: function (data) {
+                    url: button.attr("href"), dataType: "text", "text/plain", success: function (data) {
                         container.append("<div id='" + bib_id + "' class='bibtex row' style='display:none;'><pre>" + data + "</pre></div>");
                         $("#" + bib_id).slideToggle();
                     }
