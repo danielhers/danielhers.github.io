@@ -1652,7 +1652,7 @@
                 bibs.slideToggle();
             } else {
                 $.ajax({
-                    url: button.attr("href"), dataType: "text", "text/plain", success: function (data) {
+                    url: button.attr("href"), dataType: "text", success: function (data) {
                         container.append("<div id='" + bib_id + "' class='bibtex row' style='display:none;'><pre>" + data + "</pre></div>");
                         $("#" + bib_id).slideToggle();
                     }
