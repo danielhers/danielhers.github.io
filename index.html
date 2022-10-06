@@ -70,6 +70,8 @@
                     <div class="news">
                         <ul class="card-body">
                             <li>Our paper <a href="#mcwq">Compositional Generalization in Multilingual Semantic Parsing over Wikidata</a> was accepted to TACL, and will be presented by Ruixiang at EMNLP 2022.</li>
+                            <li>Our paper <a href="#green">Towards Climate Awareness in NLP Research</a> was accepted to EMNLP 2022.</li>
+                            <li>Our paper <a href="#amrlogic">Can AMR Assist Legal and Logical Reasoning?</a> was accepted to Findings of EMNLP 2022.</li>
                         </ul>
                     </div>
                 </div>
@@ -97,27 +99,6 @@
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
                       <h3 class="header">Preprints</h3>
-                        <li><a id="green"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Towards Climate Awareness in NLP Research</i></b>.
-                                    <br>
-                                    <b>Daniel Hershcovich</b>, Nicolas Webersinke, Mathias Kraus, Julia Anna Bingler and Markus Leippold.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="https://arxiv.org/abs/2205.05071" class="btn btn-outline-primary btn-sm">preprint</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#green_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="green.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="https://github.com/danielhers/climate-awareness-nlp"
-                                       class="btn btn-outline-primary btn-sm">code</a>
-                                </div>
-                                <div id="green_abstract" class="abstract row" style="display:none;">
-                                    The climate impact of AI, and NLP research in particular, has become a serious issue given the enormous amount of energy that is increasingly being used for training and running computational models. Consequently, increasing focus is placed on efficient NLP. However, this important initiative lacks simple guidelines that would allow for systematic climate reporting of NLP research. We argue that this deficiency is one of the reasons why very few publications in NLP report key figures that would allow a more thorough examination of environmental impact. As a remedy, we propose a climate performance model card with the primary purpose of being practically usable with only limited information about experiments and the underlying computer hardware. We describe why this step is essential to increase awareness about the environmental impact of NLP research and, thereby, paving the way for more thorough discussions.
-                                </div>
-                            </div>
-                        </li>
-
                         <li><a id="cognitive-mr"></a>
                             <div class="row">
                                 <div class="col">
@@ -140,6 +121,46 @@
                         </li>
 
                       <h3 class="header">Peer-Reviewed Publications</h3>
+                        <li><a id="amrlogic"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Can AMR Assist Legal and Logical Reasoning?</i></b>.
+                                    <br>
+                                    Nikolaus Schrack, Ruixiang Cui, Hugo A. López and <b>Daniel Hershcovich</b>.
+                                    Findings of <a href="https://2022.emnlp.org/">EMNLP 2022</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#amrlogic_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                </div>
+                                <div id="amrlogic_abstract" class="abstract row" style="display:none;">
+                                  Abstract Meaning Representation (AMR) has been shown to be useful for many downstream tasks. In this work, we explore the use of AMR for legal and logical reasoning, proposing neural architectures that utilize linearised AMR graphs in combination with pre-trained language models. While these models are not able to outperform text-only baselines, they correctly solve different instances than the text models, suggesting complementary abilities. Error analysis further reveals that AMR parsing quality is the most prominent challenge, especially regarding inputs with multiple sentences. We conduct a theoretical analysis of how logical relations are represented in AMR and conclude it might be helpful in some logical statements but not for others.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a id="green"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Towards Climate Awareness in NLP Research</i></b>.
+                                    <br>
+                                    <b>Daniel Hershcovich</b>, Nicolas Webersinke, Mathias Kraus, Julia Anna Bingler and Markus Leippold.
+                                    <a href="https://2022.emnlp.org/">EMNLP 2022</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://arxiv.org/abs/2205.05071" class="btn btn-outline-primary btn-sm">preprint</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#green_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="green.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                    <a href="https://github.com/danielhers/climate-awareness-nlp"
+                                       class="btn btn-outline-primary btn-sm">code</a>
+                                </div>
+                                <div id="green_abstract" class="abstract row" style="display:none;">
+                                    The climate impact of AI, and NLP research in particular, has become a serious issue given the enormous amount of energy that is increasingly being used for training and running computational models. Consequently, increasing focus is placed on efficient NLP. However, this important initiative lacks simple guidelines that would allow for systematic climate reporting of NLP research. We argue that this deficiency is one of the reasons why very few publications in NLP report key figures that would allow a more thorough examination of environmental impact. As a remedy, we propose a climate performance model card with the primary purpose of being practically usable with only limited information about experiments and the underlying computer hardware. We describe why this step is essential to increase awareness about the environmental impact of NLP research and, thereby, paving the way for more thorough discussions.
+                                </div>
+                            </div>
+                        </li>
+
                         <li><a id="mcwq"></a>
                             <div class="row">
                                 <div class="col">
