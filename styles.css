@@ -57,6 +57,13 @@ body .cv .publications {
     line-height: 1.5;
 }
 
+body .cv .talks .abstract {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+}
+
 body .cv .publications .abstract {
     border: 1px solid black;
     border-radius: 5px;
