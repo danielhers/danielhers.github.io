@@ -100,28 +100,6 @@
 
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
-                      <h3 class="header">Preprints</h3>
-                        <li><a id="cognitive-mr"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <b><i>Does injecting linguistic structure into language models lead to better alignment with brain recordings?</i></b>.
-                                    <br>
-                                    Mostafa Abdou, Ana Valeria Gonzalez, Mariya Toneva, <b>Daniel Hershcovich</b> and Anders Søgaard.
-                                </div>
-                                <div class="col btn-group mr-2 v-center" role="group">
-                                    <a href="https://arxiv.org/abs/2101.12608" class="btn btn-outline-primary btn-sm">preprint</a>
-                                    <a href="#" class="btn btn-outline-primary btn-sm"
-                                       onclick="$('#cognitive-mr_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                                    <a href="cognitive-mr.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                                    <a href="https://github.com/mhany90/Structural_bias_brain"
-                                       class="btn btn-outline-primary btn-sm">code</a>
-                                </div>
-                                <div id="cognitive-mr_abstract" class="abstract row" style="display:none;">
-                                    <i>Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman, 2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</i>
-                                </div>
-                            </div>
-                        </li>
-
                       <h3 class="header">Peer-Reviewed Publications</h3>
                         <li><a id="preregistration"></a>
                             <div class="row">
@@ -1291,6 +1269,29 @@
                                 </div>
                             </div>
                         </li>
+
+                      <h3 class="header">Preprints</h3>
+
+                      <li><a id="cognitive-mr"></a>
+                        <div class="row">
+                          <div class="col">
+                            <b><i>Does injecting linguistic structure into language models lead to better alignment with brain recordings?</i></b>.
+                            <br>
+                            Mostafa Abdou, Ana Valeria Gonzalez, Mariya Toneva, <b>Daniel Hershcovich</b> and Anders Søgaard.
+                          </div>
+                          <div class="col btn-group mr-2 v-center" role="group">
+                            <a href="https://arxiv.org/abs/2101.12608" class="btn btn-outline-primary btn-sm">preprint</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"
+                                        onclick="$('#cognitive-mr_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                            <a href="cognitive-mr.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                            <a href="https://github.com/mhany90/Structural_bias_brain"
+                               class="btn btn-outline-primary btn-sm">code</a>
+                          </div>
+                          <div id="cognitive-mr_abstract" class="abstract row" style="display:none;">
+                            <i>Neuroscientists evaluate deep neural networks for natural language processing as possible candidate models for how language is processed in the brain. These models are often trained without explicit linguistic supervision, but have been shown to learn some linguistic structure in the absence of such supervision (Manning et al., 2020), potentially questioning the relevance of symbolic linguistic theories in modeling such cognitive processes (Warstadt and Bowman, 2020). We evaluate across two fMRI datasets whether language models align better with brain recordings, if their attention is biased by annotations from syntactic or semantic formalisms. Using structure from dependency or minimal recursion semantic annotations, we find alignments improve significantly for one of the datasets. For another dataset, we see more mixed results. We present an extensive analysis of these results. Our proposed approach enables the evaluation of more targeted hypotheses about the composition of meaning in the brain, expanding the range of possible scientific inferences a neuroscientist could make, and opens up new opportunities for cross-pollination between computational neuroscience and linguistics.</i>
+                          </div>
+                        </div>
+                      </li>
 
                         <h3 class="header">Dissertations</h3>
 
