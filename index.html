@@ -70,6 +70,8 @@
                     <div class="news">
                         <ul class="card-body">
                           <li>Our paper <a href="#nodalida2023">Sentiment Classification of Historical Literary Danish and Norwegian Texts</a> was accepted to <a href="nodalida2023.fo">NoDaLiDa 2023</a>!</li> 
+                          <li>Our paper <a href="#preregistration">A Two-Sided Discussion of Preregistration of NLP Research</a> was accepted to <a href="https://2023.eacl.org/">EACL 2023</a>!</li> 
+                          <li>Two papers accepted to the <a href="https://2023.eacl.org/">EACL 2023</a> workshop <a href="https://sites.google.com/view/c3nlp/home">Cross-Cultural Considerations in NLP</a>: <a href="#c3nlp_values">Assessing Cross-Cultural Alignment between ChatGPT and Human Societies: An Empirical Study</a> and <a href="#c3nlp_offensive">Cross-Cultural Transfer Learning for Chinese Offensive Language Detection</a>.</li> 
                           <li>Received <a href="https://veluxfoundations.dk/en/villum-experiment-2022">Villum Experiment</a> grant with <a href="https://hastiseifi.com/">Hasti Seifi</a> (Arizona State University) on Haptic Captioning: Using Natural Language Models to Design Haptic Experiences. <a href="https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1307&ProjectId=158782&DepartmentId=18970&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=113279">We are hiring a 2-year postdoc</a>! The application deadline is May 8, 2023.</li>
                           <li>I am organizing a <a href="https://continuing-education.ku.dk/artificial-intelligence/climate-friendly-ai/">Copenhagen Summer University course on Climate Friendly AI</a> with <a href="https://raghavian.github.io/">Raghavendra Selvan</a> in August 2023.</li>
                         </ul>
@@ -115,6 +117,42 @@
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
                       <h3 class="header">Peer-Reviewed Publications</h3>
+                        <li><a id="c3nlp_offensive"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Cross-Cultural Transfer Learning for Chinese Offensive Language Detection</i></b>.
+                                    <br>
+                                    Li Zhou, Laura Cabello, Yong Cao and <b>Daniel Hershcovich</b>.
+                                    <a href="https://sites.google.com/view/c3nlp/home">C3NLP 2023</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#c3nlp_offensive_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                </div>
+                                <div id="c3nlp_offensive_abstract" class="abstract row" style="display:none;">
+                                  Detecting offensive language is a challenging task. Generalizing across different cultures and languages becomes even more challenging: besides lexical, syntactic and semantic differences, pragmatic aspects such as cultural norms and sensitivities, which are particularly relevant in this context, vary greatly. In this paper, we target Chinese offensive language detection and aim to investigate the impact of transfer learning using offensive language detection data from different cultural backgrounds, specifically Korean and English. We find that culture-specific biases in what is considered offensive negatively impact the transferability of language models (LMs) and that LMs trained on diverse cultural data are sensitive to different features in Chinese offensive language detection. In a few-shot learning scenario, however, our study shows promising prospects for non-English offensive language detection with limited resources. Our findings highlight the importance of cross-cultural transfer learning in improving offensive language detection and promoting inclusive digital spaces.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a id="c3nlp_values"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Assessing Cross-Cultural Alignment between ChatGPT and Human Societies: An Empirical Study</i></b>.
+                                    <br>
+                                    Yong Cao, Li Zhou, Seolhwa Lee, Laura Cabello, Min Chen and <b>Daniel Hershcovich</b>.
+                                    <a href="https://sites.google.com/view/c3nlp/home">C3NLP 2023</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#c3nlp_values_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                </div>
+                                <div id="c3nlp_values_abstract" class="abstract row" style="display:none;">
+                                  The recent release of ChatGPT has garnered widespread recognition for its exceptional ability to generate human-like responses in dialogue. Given its usage by users from various nations and its training on a vast multilingual corpus that incorporates diverse cultural and societal norms, it is crucial to evaluate its effectiveness in cultural adaptation. In this paper, we investigate the underlying cultural background of ChatGPT by analyzing its responses to questions designed to quantify human cultural differences. Our findings suggest that, when prompted with American context, ChatGPT exhibits a strong alignment with American culture, but it adapts less effectively to other cultural contexts. Furthermore, by using different prompts to probe the model, we show that English prompts reduce the variance in model responses, flattening out cultural differences and biasing them towards American culture. This study provides valuable insights into the cultural implications of ChatGPT and highlights the necessity of greater diversity and cultural awareness in language technologies.
+                                </div>
+                            </div>
+                        </li>
+                        
                         <li><a id="nodalida2023"></a>
                             <div class="row">
                                 <div class="col">
