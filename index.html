@@ -113,6 +113,26 @@
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
                       <h3 class="header">Peer-Reviewed Publications</h3>
+                        <li><a id="hyperprobe"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Probing for Hyperbole in Pre-Trained Language Models</i></b>.
+                                    <br>
+                                    Nina Skovgaard Schneidermann, <b>Daniel Hershcovich</b> and Bolette Sandford Pedersen.
+                                    <a href="https://acl2023-srw.github.io/">ACL Student Research Workshop (SRW) 2023</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="hyperprobe.pdf" class="btn btn-outline-primary btn-sm">pdf</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#hyperprobe_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="hyperprobe.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                </div>
+                                <div id="hyperprobe_abstract" class="abstract row" style="display:none;">
+                                    Hyperbole is a common figure of speech, which is under-explored in NLP research. In this study, we conduct edge and minimal description length (MDL) probing experiments for three pre-trained language models (PLMs) in an attempt to explore the extent to which hyperbolic information is encoded in these models. We use both word-in-context and sentencelevel representations as model inputs as a basis for comparison. We also annotate 63 hyperbole sentences from the HYPO dataset according to an operational taxonomy to conduct an error analysis to explore the encoding of different hyperbole categories. Our results show that hyperbole is to a limited extent encoded in PLMs, and mostly in the final layers. They also indicate that hyperbolic information may be better encoded by the sentence-level representations, which, due to the pragmatic nature of hyperbole, may therefore provide a more accurate and informative representation in PLMs. Finally, the inter-annotator agreement for our annotations, a Cohen’s Kappa of 0.339, suggest that the taxonomy categories may not be intuitive and need revision or simplification.
+                                </div>
+                            </div>
+                        </li>
+                        
                         <li><a id="mcwqr"></a>
                             <div class="row">
                                 <div class="col">
