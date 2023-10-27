@@ -77,6 +77,7 @@
                 <div id="newsList" class="contact collapse show" data-parent="#accordion">
                     <div class="news">
                         <ul class="card-body">
+                          <li>Our paper <a href="#recipes">Cultural Adaptation of Recipes</a> was accepted to <a href="https://transacl.org/">TACL</a>!</li>
                           <li>One paper accepted to Findings of EMNLP 2023: <a href="#compass">Cultural Compass: Predicting Transfer Learning Success in Offensive Language Detection with Cultural Features</a></li>
                           <li>Our paper <a href="#superhuman"><i>What's the Meaning of Superhuman Performance in Today's NLU?</i></a> won an <a href='https://2023.aclweb.org/program/best_papers/' target="_blank">Outstanding Paper Award</a> at <a href="https://2023.aclweb.org/">ACL 2023</a>!</li>
                           <li>Our paper <a href="#c3nlp_values"><i>Assessing Cross-Cultural Alignment between ChatGPT and Human Societies: An Empirical Study</i></a> was picked up by several Danish media outlets, including <a href="#mediaList">Politiken, Børsen, Ekstra Bladet, P1 Morgen, TV 2</a>!</li>
@@ -108,6 +109,26 @@
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
                       <h3 class="header">Peer-Reviewed Publications</h3>
+                        <li><a id="recipes"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Cultural Adaptation of Recipes</i></b>.
+                                    <br>
+                                    Yong Cao, Yova Kementchedjhieva, Ruixiang Cui, Antonia Karamolegkou, Li Zhou, Megan Dare, Lucia Donatelli and <b>Daniel Hershcovich</b>.
+                                    <a href="https://transacl.org/">TACL</a>, 2023.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://arxiv.org/abs/2310.17353" class="btn btn-outline-primary btn-sm">preprint</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#recipes_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="recipes.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                </div>
+                                <div id="recipes_abstract" class="abstract row" style="display:none;">
+                                  Building upon the considerable advances in Large Language Models (LLMs), we are now equipped to address more sophisticated tasks demanding a nuanced understanding of cross-cultural contexts. A key example is recipe adaptation, which goes beyond simple translation to include a grasp of ingredients, culinary techniques, and dietary preferences specific to a given culture. We introduce a new task involving the translation and cultural adaptation of recipes between Chinese and English-speaking cuisines. To support this investigation, we present CulturalRecipes, a unique dataset comprised of automatically paired recipes written in Mandarin Chinese and English. This dataset is further enriched with a human-written and curated test set. In this intricate task of cross-cultural recipe adaptation, we evaluate the performance of various methods, including GPT-4 and other LLMs, traditional machine translation, and information retrieval techniques. Our comprehensive analysis includes both automatic and human evaluation metrics. While GPT-4 exhibits impressive abilities in adapting Chinese recipes into English, it still lags behind human expertise when translating English recipes into Chinese. This underscores the multifaceted nature of cultural adaptations. We anticipate that these insights will significantly contribute to future research on culturally-aware language models and their practical application in culturally diverse contexts.
+                                </div>
+                            </div>
+                        </li>
+                        
                         <li><a id="compass"></a>
                             <div class="row">
                                 <div class="col">
