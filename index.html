@@ -129,6 +129,14 @@
                                     Yong Cao, Ruixue Ding, Boli Chen, Xianzhi Li, Min Chen, <b>Daniel Hershcovich</b>, Pengjun Xie, Fei Huang.
                                     <a href="https://2024.eacl.org/">EACL 2024</a>.
                                 </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://arxiv.org/abs/2309.01606" class="btn btn-outline-primary btn-sm">preprint</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#geoencoder_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                </div>
+                                <div id="geoencoder_abstract" class="abstract row" style="display:none;">
+                                  Chinese geographic re-ranking task aims to find the most relevant addresses among retrieved candidates, which is crucial for location-related services such as navigation maps. Unlike the general sentences, geographic contexts are closely intertwined with geographical concepts, from general spans (e.g., province) to specific spans (e.g., road). Given this feature, we propose an innovative framework, namely Geo-Encoder, to more effectively integrate Chinese geographical semantics into re-ranking pipelines. Our methodology begins by employing off-the-shelf tools to associate text with geographical spans, treating them as chunking units. Then, we present a multi-task learning module to simultaneously acquire an effective attention matrix that determines chunk contributions to extra semantic representations. Furthermore, we put forth an asynchronous update mechanism for the proposed addition task, aiming to guide the model capable of effectively focusing on specific chunks. Experiments on two distinct Chinese geographic re-ranking datasets, show that the Geo-Encoder achieves significant improvements when compared to state-of-the-art baselines. Notably, it leads to a substantial improvement in the Hit@1 score of MGEO-BERT, increasing it by 6.22% from 62.76 to 68.98 on the GeoTES dataset.
+                                </div>
                             </div>
                         </li>
                         
