@@ -153,9 +153,11 @@
                                     <a href="https://2024.eacl.org/">EACL 2024</a>.
                                 </div>
                                 <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://aclanthology.org/2024.eacl-long.91/" class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="https://arxiv.org/abs/2309.01606" class="btn btn-outline-primary btn-sm">preprint</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#geoencoder_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="geoencoder.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="geoencoder_abstract" class="abstract row" style="display:none;">
                                   Chinese geographic re-ranking task aims to find the most relevant addresses among retrieved candidates, which is crucial for location-related services such as navigation maps. Unlike the general sentences, geographic contexts are closely intertwined with geographical concepts, from general spans (e.g., province) to specific spans (e.g., road). Given this feature, we propose an innovative framework, namely Geo-Encoder, to more effectively integrate Chinese geographical semantics into re-ranking pipelines. Our methodology begins by employing off-the-shelf tools to associate text with geographical spans, treating them as chunking units. Then, we present a multi-task learning module to simultaneously acquire an effective attention matrix that determines chunk contributions to extra semantic representations. Furthermore, we put forth an asynchronous update mechanism for the proposed addition task, aiming to guide the model capable of effectively focusing on specific chunks. Experiments on two distinct Chinese geographic re-ranking datasets, show that the Geo-Encoder achieves significant improvements when compared to state-of-the-art baselines. Notably, it leads to a substantial improvement in the Hit@1 score of MGEO-BERT, increasing it by 6.22% from 62.76 to 68.98 on the GeoTES dataset.
@@ -172,9 +174,11 @@
                                     Findings of <a href="https://2024.eacl.org/">EACL 2024</a>.
                                 </div>
                                 <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://aclanthology.org/2024.findings-eacl.63/" class="btn btn-outline-primary btn-sm">proceedings</a>
                                     <a href="http://arxiv.org/abs/2401.10352" class="btn btn-outline-primary btn-sm">preprint</a>
                                     <a href="#" class="btn btn-outline-primary btn-sm"
                                        onclick="$('#cudialog_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="cudialog.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
                                 </div>
                                 <div id="cudialog_abstract" class="abstract row" style="display:none;">
                                   The cultural landscape of interactions with dialogue agents is a compelling yet relatively unexplored territory. It's clear that various sociocultural aspects -- from communication styles and beliefs to shared metaphors and knowledge -- profoundly impact these interactions. To delve deeper into this dynamic, we introduce cuDialog, a first-of-its-kind benchmark for dialogue generation with a cultural lens. We also develop baseline models capable of extracting cultural attributes from dialogue exchanges, with the goal of enhancing the predictive accuracy and quality of dialogue agents. To effectively co-learn cultural understanding and multi-turn dialogue predictions, we propose to incorporate cultural dimensions with dialogue encoding features. Our experimental findings highlight that incorporating cultural value surveys boosts alignment with references and cultural markers, demonstrating its considerable influence on personalization and dialogue quality. To facilitate further exploration in this exciting domain, we publish our benchmark publicly accessible at https://github.com/yongcaoplus/cuDialog.
