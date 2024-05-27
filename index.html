@@ -182,6 +182,15 @@
                                     Ali Al-Laith, Alexander Conroy, Jens Bjerring-Hansen and <b>Daniel Hershcovich</b>.
                                     <a href="https://lrec-coling-2024.org">LREC-COLING 2024</a>.
                                 </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://aclanthology.org/2024.lrec-main.431/" class="btn btn-outline-primary btn-sm">proceedings</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#memobert_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="memobert.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                </div>
+                                <div id="memobert_abstract" class="abstract row" style="display:none;">
+                                  We develop and evaluate the first pre-trained language models specifically tailored for historical Danish and Norwegian texts. Three models are trained on a corpus of 19th-century Danish and Norwegian literature: two directly on the corpus with no prior pre-training, and one with continued pre-training. To evaluate the models, we utilize an existing sentiment classification dataset, and additionally introduce a new annotated word sense disambiguation dataset focusing on the concept of fate. Our assessment reveals that the model employing continued pre-training outperforms the others in two downstream NLP tasks on historical texts. Specifically, we observe substantial improvement in sentiment classification and word sense disambiguation compared to models trained on contemporary texts. These results highlight the effectiveness of continued pre-training for enhancing performance across various NLP tasks in historical text analysis.
+                                </div>
                             </div>
                         </li>
                         
