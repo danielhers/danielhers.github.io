@@ -127,8 +127,17 @@
                                 <div class="col">
                                     <b><i>Can Abstract Meaning Representation Facilitate Fair Legal Judgement Predictions?</i></b>.
                                     <br>
-                                    Supriti Vijay and  <b>Daniel Hershcovich</b></b>.
+                                    Supriti Vijay and <b>Daniel Hershcovich</b></b>.
                                     <a href="https://insights-workshop.github.io/2024/">Workshop on Insights from Negative Results in NLP 2024</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://aclanthology.org/2024.insights-1.13/" class="btn btn-outline-primary btn-sm">proceedings</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#amrfair_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="amrfair.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                </div>
+                                <div id="amrfair_abstract" class="abstract row" style="display:none;">
+                                  Legal judgment prediction encompasses the automated prediction of case outcomes by leveraging historical facts and opinions. While this approach holds the potential to enhance the efficiency of the legal system, it also raises critical concerns regarding the perpetuation of biases. Abstract Meaning Representation has shown promise as an intermediate text representation in various downstream NLP tasks due to its ability to capture semantically meaningful information in a graph-like structure. In this paper, we employ this ability of AMR in the legal judgement prediction task and assess to what extent it encodes biases, or conversely, abstracts away from them. Our study reveals that while AMR-based models exhibit worse overall performance than transformer-based models, they are less biased for attributes like age and defendant state compared to gender. By shedding light on these findings, this paper contributes to a more nuanced understanding of AMR’s potential benefits and limitations in legal NLP.
                                 </div>
                             </div>
                         </li>
@@ -142,27 +151,36 @@
                                     <a href="https://sig-edu.org/bea/2024">Workshop on Innovative Use of NLP for Building Educational Applications 2024</a>
 					<span style="color:red">Outstanding Paper Award</span>.
                                 </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://aclanthology.org/2024.bea-1.29/" class="btn btn-outline-primary btn-sm">proceedings</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#anki_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                    <a href="anki.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                                </div>
+                                <div id="anki_abstract" class="abstract row" style="display:none;">
+                                  This paper presents and tests AllAI, an app that utilizes state-of-the-art NLP technology to assist second language acquisition through a novel method of sentence-based spaced repetition. Diverging from current single word or fixed sentence repetition, AllAI dynamically combines words due for repetition into sentences, enabling learning words in context while scheduling them independently. This research explores various suitable NLP paradigms and finds a few-shot prompting approach and retrieval of existing sentences from a corpus to yield the best correctness and scheduling accuracy. Subsequently, it evaluates these methods on 26 learners of Danish, finding a four-fold increase in the speed at which new words are learned, compared to conventional spaced repetition. Users of the retrieval method also reported significantly higher enjoyment, hinting at a higher user engagement.
+                                </div>
                             </div>
                         </li>
 						
-					  <li><a id="creoleval"></a>
-						<div class="row">
-						  <div class="col">
-							<b><i>CreoleVal: Multilingual Multitask Benchmarks for Creoles</i></b>.
-							<br>
-							Heather Lent, Kushal Tatariya, Raj Dabre, Yiyi Chen, Marcell Fekete, Esther Ploeger, Li Zhou, Hans Erik Heje, Diptesh Kanojia, Paul Belony, Marcel Bollmann, Loïc Grobol, Miryam de Lhoneux, <b>Daniel Hershcovich</b>, Michel DeGraff, Anders Søgaard and Johannes Bjerva.
-							TACL, 2024 (accepted).
-						  </div>
-						  <div class="col btn-group mr-2 v-center" role="group">
-							<a href="https://arxiv.org/abs/2310.19567" class="btn btn-outline-primary btn-sm">preprint</a>
-							<a href="#" class="btn btn-outline-primary btn-sm"
-										onclick="$('#creoleval_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-						  </div>
-						  <div id="creoleval_abstract" class="abstract row" style="display:none;">
-							<i>Creoles represent an under-explored and marginalized group of languages, with few available resources for NLP research. While the genealogical ties between Creoles and other highly-resourced languages imply a significant potential for transfer learning, this potential is hampered due to this lack of annotated data. In this work we present CreoleVal, a collection of benchmark datasets spanning 8 different NLP tasks, covering up to 28 Creole languages; it is an aggregate of brand new development datasets for machine comprehension, relation classification, and machine translation for Creoles, in addition to a practical gateway to a handful of preexisting benchmarks. For each benchmark, we conduct baseline experiments in a zero-shot setting in order to further ascertain the capabilities and limitations of transfer learning for Creoles. Ultimately, the goal of CreoleVal is to empower research on Creoles in NLP and computational linguistics. We hope this resource will contribute to technological inclusion for Creole language users around the globe.</i>
-						  </div>
-						</div>
-					  </li>
+			  <li><a id="creoleval"></a>
+				<div class="row">
+				  <div class="col">
+					<b><i>CreoleVal: Multilingual Multitask Benchmarks for Creoles</i></b>.
+					<br>
+					Heather Lent, Kushal Tatariya, Raj Dabre, Yiyi Chen, Marcell Fekete, Esther Ploeger, Li Zhou, Hans Erik Heje, Diptesh Kanojia, Paul Belony, Marcel Bollmann, Loïc Grobol, Miryam de Lhoneux, <b>Daniel Hershcovich</b>, Michel DeGraff, Anders Søgaard and Johannes Bjerva.
+					TACL, 2024 (accepted).
+				  </div>
+				  <div class="col btn-group mr-2 v-center" role="group">
+					<a href="https://arxiv.org/abs/2310.19567" class="btn btn-outline-primary btn-sm">preprint</a>
+					<a href="#" class="btn btn-outline-primary btn-sm"
+								onclick="$('#creoleval_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+				  </div>
+				  <div id="creoleval_abstract" class="abstract row" style="display:none;">
+					<i>Creoles represent an under-explored and marginalized group of languages, with few available resources for NLP research. While the genealogical ties between Creoles and other highly-resourced languages imply a significant potential for transfer learning, this potential is hampered due to this lack of annotated data. In this work we present CreoleVal, a collection of benchmark datasets spanning 8 different NLP tasks, covering up to 28 Creole languages; it is an aggregate of brand new development datasets for machine comprehension, relation classification, and machine translation for Creoles, in addition to a practical gateway to a handful of preexisting benchmarks. For each benchmark, we conduct baseline experiments in a zero-shot setting in order to further ascertain the capabilities and limitations of transfer learning for Creoles. Ultimately, the goal of CreoleVal is to empower research on Creoles in NLP and computational linguistics. We hope this resource will contribute to technological inclusion for Creole language users around the globe.</i>
+				  </div>
+				</div>
+			  </li>
 
                         <li><a id="globalaicultures2024"></a>
                             <div class="row">
