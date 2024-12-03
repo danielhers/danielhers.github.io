@@ -76,7 +76,8 @@
                 <div id="newsList" class="contact collapse show" data-parent="#accordion">
                     <div class="news">
                         <ul class="card-body">
-                          <li><a href="#chr2024">Our paper on literary time travel</a> was accepted to <a href="https://2024.computational-humanities-research.org/">CHR 2024</a>.</li>
+                          <li><a href="#death">Our paper on death euphemisms</a> was accepted to <a href="https://coling2025.org/">COLING 2025</a>.</li>
+			  <li><a href="#chr2024">Our paper on literary time travel</a> was accepted to <a href="https://2024.computational-humanities-research.org/">CHR 2024</a>.</li>
                           <li>I am program co-chair for <a href="https://www.nodalida-bhlt2025.eu/">NoDaLiDa/Baltic-HLT 2025</a>.</li>
 			  <li>I am a Senior Area Chair for <a href="https://2025.naacl.org/">NAACL 2025</a>, for the Special Theme Track: NLP in a Multicultural World.</li>
 			  <li>I am a faculty advisor to the Student Research Workshop chairs for <a href="https://2025.aclweb.org/">ACL 2025</a>.</li>
@@ -122,6 +123,17 @@
                             </div>
                         </li>
 
+                        <li><a id="death"></a>
+                            <div class="row">
+                                <div class="col">
+                                    <b><i>Dying or Departing? Euphemism Detection for Death Discourse in Historical Texts</i></b>.
+                                    <br>
+                                    Ali Al-Laith, Alexander Conroy, Jens Bjerring-Hansen, Bolette Pedersen, Carsten Levisen and <b>Daniel Hershcovich</b>.
+                                    <a href="https://coling2025.org/">COLING 2025</a>.
+                                </div>
+                            </div>
+                        </li>
+
                         <li><a id="chr2024"></a>
                             <div class="row">
                                 <div class="col">
@@ -129,6 +141,14 @@
                                     <br>
                                     Jens Bjerring-Hansen, Ali Al-Laith, <b>Daniel Hershcovich</b>, Alexander Conroy and Sebastian Ørtoft Rasmussen.
                                     <a href="https://2024.computational-humanities-research.org/">CHR 2024</a>.
+                                </div>
+                                <div class="col btn-group mr-2 v-center" role="group">
+                                    <a href="https://ceur-ws.org/Vol-3834/paper19.pdf" class="btn btn-outline-primary btn-sm">proceedings</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm"
+                                       onclick="$('#chr2024_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                                </div>
+                                <div id="chr2024_abstract" class="abstract row" style="display:none;">
+                                  The classification of historical and contemporary novels is a nuanced task that has traditionally relied on expert literary analysis. This paper introduces a novel dataset comprising Danish and Norwegian novels from the last 30 years of the 19th century, annotated by literary scholars to distinguish between historical and contemporary works. While this manual classification is time-consuming and subjective, our approach leverages pre-trained language models to streamline and potentially standardize this process. We evaluate their effectiveness in automating this classification by examining their performance on titles and the first few sentences of each novel. After fine-tuning, the models show good performance but fail to fully capture the nuanced understanding exhibited by literary scholars. This research underscores the potential and limitations of NLP in literary genre classification and suggests avenues for further improvement, such as incorporating more sophisticated model architectures or hybrid methods that blend machine learning with expert knowledge. Our findings contribute to the broader field of computational humanities by highlighting the challenges and opportunities in automating literary analysis.
                                 </div>
                             </div>
                         </li>
