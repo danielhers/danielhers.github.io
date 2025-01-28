@@ -12,14 +12,14 @@ body .cv .top .avatar img {
 }
 
 body .cv .top .title {
-    font-size: 3vw;
+    font-size: 5vw;
     color: #002266;
     font-weight: 400;
     margin-top: 15px;
 }
 
 body .cv .top .subtitle {
-    font-size: 2vw;
+    font-size: 4vw;
     font-family: 'Alef Hebrew', sans-serif;
     color: #002266;
     font-weight: 400;
