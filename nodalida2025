@@ -1,0 +1,12 @@
+@inproceedings{ali2025dialogue2,
+    title = "Annotating and Classifying Direct Speech in Historical {D}anish and {N}orwegian Literary Texts",
+    author = "\textbf{Al-Laith, Ali}  and
+      Hershcovich, Daniel  and
+      Bjerring-Hansen, Jens  and
+      Parby, Jakob  and
+      Conroy, Alexander  and
+      Tangherlini, Timothy",
+    booktitle = {The 25th Nordic Conference on Computational Linguistics \textbf{(NoDaLiDa 2025)}, Tallinn, Estonia},
+    month = march,
+    year = "2025",
+}
