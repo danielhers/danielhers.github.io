@@ -2333,6 +2333,44 @@
 
                       <h3 class="header">Preprints</h3>
 
+                      <li><a id="culture-reasoning"></a>
+                        <div class="row">
+                          <div class="col">
+                            <b><i>From annotation to reasoning: Culture in language models</i></b>.
+                            <br>
+                            <b>Daniel Hershcovich</b>, Alexander Conroy and Jens Bjerring-Hansen.
+                          </div>
+                          <div class="col btn-group mr-2 v-center" role="group">
+                            <a href="https://arxiv.org/abs/2609.30897" class="btn btn-outline-primary btn-sm">preprint</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"
+                                        onclick="$('#culture-reasoning_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                            <a href="culture-reasoning.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                          </div>
+                          <div id="culture-reasoning_abstract" class="abstract row" style="display:none;">
+                            <i>How should we evaluate language models when more than one interpretation can be right? Cultural benchmarks often test factual knowledge, agreement with survey responses, or recognition of a predefined meaning. These tasks leave open whether a model can explain how a cultural reference works in a particular text, support a reading with evidence, or revise it after criticism. This is a question of interpretive depth, complementary to the breadth of cultural coverage. We argue that literary interpretation offers a useful setting for studying these capabilities. We focus on cultural referencing and reuse: how texts invoke, repeat, and transform earlier expressions across historical and linguistic contexts. Our central claim is that literary scholars can disagree about an interpretation while recognizing the quality of its support. We propose linking evidence-centered benchmarks, evaluation that preserves scholarly disagreement, and model-development experiments on literary data, contextual resources, and scholarly feedback. Danish literature provides a concrete starting point, with implications for other languages and domains. The aim is to develop alternative evaluation strategies that go beyond conventional benchmark metrics and guide model development toward cultural robustness in AI systems.</i>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li><a id="blixen-bible"></a>
+                        <div class="row">
+                          <div class="col">
+                            <b><i>Retrieving Biblical Intertextual References in Karen Blixen's Seven Gothic Tales</i></b>.
+                            <br>
+                            András Kovács, Alexander Conroy, <b>Daniel Hershcovich</b> and Jens Bjerring-Hansen.
+                          </div>
+                          <div class="col btn-group mr-2 v-center" role="group">
+                            <a href="https://arxiv.org/abs/2609.35765" class="btn btn-outline-primary btn-sm">preprint</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"
+                                        onclick="$('#blixen-bible_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                            <a href="blixen-bible.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                          </div>
+                          <div id="blixen-bible_abstract" class="abstract row" style="display:none;">
+                            <i>Identifying intertextual references is central to literary scholarship, but computationally difficult when source material is transformed through paraphrase, allusion, historical language, and translation. We investigate this problem through biblical intertextuality in Karen Blixen's Seven Gothic Tales. Drawing on the commentary to a critical edition, we construct a benchmark of 189 annotated references and evaluate retrieval against all 31,170 verses of historically plausible Danish Old and New Testament translations. We compare TF–IDF and BM25 with multilingual and Danish sentence encoders, examine the effect of linguistic normalization, and fine-tune a Danish encoder using hard negatives and five-fold cross-validation. We analyze performance across automatically derived lexical-overlap strata representing quotations, paraphrases, and allusions. Linguistically normalized BM25 provides a strong zero-shot baseline, attaining an overall R@10 of 0.365 and retrieving every quotation within its ten highest-ranked verses. The best zero-shot dense model achieves a comparable overall score of 0.360 while performing better on allusions. Fine-tuning DFM-large raises its overall R@10 from 0.265 to 0.508 and more than doubles its performance on allusions, from 0.138 to 0.339. However, evaluation against editorial annotations alone understates the model's scholarly usefulness: a literary scholar judged seven of 30 selected rank-one predictions counted as false positives to be meaningful additional references. These findings show both the potential and the epistemic limits of computational intertextual retrieval. Rather than treating scholarly annotations as exhaustive or model outputs as discoveries, we propose retrieval models as heuristic co-readers that recover documented references and generate candidates for expert-led close reading.</i>
+                          </div>
+                        </div>
+                      </li>
+
                       <li><a id="gpt4v-marvl"></a>
                         <div class="row">
                           <div class="col">
