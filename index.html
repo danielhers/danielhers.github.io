@@ -89,6 +89,7 @@
                             <ul class="news-list">
                                 <li><time datetime="2027-04">April 2027</time>: I will be an invited speaker at the <i>Future of NLP</i> event in Galway, Ireland.</li>
                                 <li><time datetime="2026-11">November 2026</time>: I will attend the <i>Computational Modeling of Ideas</i> workshop at the University of Hamburg.</li>
+                                <li><time datetime="2026-10-23">October 2026</time>: Our paper <a href="#blixen-bible">Retrieving Biblical Intertextual References in Karen Blixen’s <i>Seven Gothic Tales</i></a> was accepted to <a href="https://2027.computational-humanities-research.org/">CHR 2027</a> in Manchester for a long oral presentation.</li>
                                 <li><time datetime="2026-10-02">October 2026</time>: From 2 October, my office is at <a href="#contact_info">Øster Voldgade 3</a>, 1350 Copenhagen K, room 01.01.204.</li>
                                 <li><time datetime="2026-10">October 2026</time>: Claire Barale joined the DETECT project as a postdoc.</li>
                                 <li><time datetime="2026-09">September 2026</time>: I co-organized the <a href="https://sites.google.com/view/eccv-2026-visper/"><i>Visual Persuasion (VisPer)</i></a> workshop at <a href="https://eccv.ecva.net/">ECCV 2026</a> in Malmö.</li>
@@ -183,6 +184,26 @@
                 <div id="publicationList" class="publications collapse show" data-parent="#accordion">
                     <ul class="card-body">
                       <h3 class="header">Peer-Reviewed Publications</h3>
+                      <li><a id="blixen-bible"></a>
+                        <div class="row">
+                          <div class="col">
+                            <b><i>Retrieving Biblical Intertextual References in Karen Blixen's Seven Gothic Tales</i></b>.
+                            <br>
+                            András Kovács, Alexander Conroy, <b>Daniel Hershcovich</b> and Jens Bjerring-Hansen.
+                            <a href="https://2027.computational-humanities-research.org/">Computational Humanities Research (CHR) 2027</a> (accepted; long oral presentation).
+                          </div>
+                          <div class="col btn-group mr-2 v-center" role="group">
+                            <a href="https://arxiv.org/abs/2609.35765" class="btn btn-outline-primary btn-sm">preprint</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm"
+                                        onclick="$('#blixen-bible_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
+                            <a href="blixen-bible.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
+                          </div>
+                          <div id="blixen-bible_abstract" class="abstract row" style="display:none;">
+                            <i>Identifying intertextual references is central to literary scholarship, but computationally difficult when source material is transformed through paraphrase, allusion, historical language, and translation. We investigate this problem through biblical intertextuality in Karen Blixen's Seven Gothic Tales. Drawing on the commentary to a critical edition, we construct a benchmark of 189 annotated references and evaluate retrieval against all 31,170 verses of historically plausible Danish Old and New Testament translations. We compare TF–IDF and BM25 with multilingual and Danish sentence encoders, examine the effect of linguistic normalization, and fine-tune a Danish encoder using hard negatives and five-fold cross-validation. We analyze performance across automatically derived lexical-overlap strata representing quotations, paraphrases, and allusions. Linguistically normalized BM25 provides a strong zero-shot baseline, attaining an overall R@10 of 0.365 and retrieving every quotation within its ten highest-ranked verses. The best zero-shot dense model achieves a comparable overall score of 0.360 while performing better on allusions. Fine-tuning DFM-large raises its overall R@10 from 0.265 to 0.508 and more than doubles its performance on allusions, from 0.138 to 0.339. However, evaluation against editorial annotations alone understates the model's scholarly usefulness: a literary scholar judged seven of 30 selected rank-one predictions counted as false positives to be meaningful additional references. These findings show both the potential and the epistemic limits of computational intertextual retrieval. Rather than treating scholarly annotations as exhaustive or model outputs as discoveries, we propose retrieval models as heuristic co-readers that recover documented references and generate candidates for expert-led close reading.</i>
+                          </div>
+                        </div>
+                      </li>
+
                         <li><a id="target-retention"></a>
                             <div class="row">
                                 <div class="col">
@@ -2368,24 +2389,7 @@
                         </div>
                       </li>
 
-                      <li><a id="blixen-bible"></a>
-                        <div class="row">
-                          <div class="col">
-                            <b><i>Retrieving Biblical Intertextual References in Karen Blixen's Seven Gothic Tales</i></b>.
-                            <br>
-                            András Kovács, Alexander Conroy, <b>Daniel Hershcovich</b> and Jens Bjerring-Hansen.
-                          </div>
-                          <div class="col btn-group mr-2 v-center" role="group">
-                            <a href="https://arxiv.org/abs/2609.35765" class="btn btn-outline-primary btn-sm">preprint</a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"
-                                        onclick="$('#blixen-bible_abstract').slideToggle(); $(this).toggleClass('active'); return false;">abstract</a>
-                            <a href="blixen-bible.bib" class="btn btn-outline-primary btn-sm bib">bib</a>
-                          </div>
-                          <div id="blixen-bible_abstract" class="abstract row" style="display:none;">
-                            <i>Identifying intertextual references is central to literary scholarship, but computationally difficult when source material is transformed through paraphrase, allusion, historical language, and translation. We investigate this problem through biblical intertextuality in Karen Blixen's Seven Gothic Tales. Drawing on the commentary to a critical edition, we construct a benchmark of 189 annotated references and evaluate retrieval against all 31,170 verses of historically plausible Danish Old and New Testament translations. We compare TF–IDF and BM25 with multilingual and Danish sentence encoders, examine the effect of linguistic normalization, and fine-tune a Danish encoder using hard negatives and five-fold cross-validation. We analyze performance across automatically derived lexical-overlap strata representing quotations, paraphrases, and allusions. Linguistically normalized BM25 provides a strong zero-shot baseline, attaining an overall R@10 of 0.365 and retrieving every quotation within its ten highest-ranked verses. The best zero-shot dense model achieves a comparable overall score of 0.360 while performing better on allusions. Fine-tuning DFM-large raises its overall R@10 from 0.265 to 0.508 and more than doubles its performance on allusions, from 0.138 to 0.339. However, evaluation against editorial annotations alone understates the model's scholarly usefulness: a literary scholar judged seven of 30 selected rank-one predictions counted as false positives to be meaningful additional references. These findings show both the potential and the epistemic limits of computational intertextual retrieval. Rather than treating scholarly annotations as exhaustive or model outputs as discoveries, we propose retrieval models as heuristic co-readers that recover documented references and generate candidates for expert-led close reading.</i>
-                          </div>
-                        </div>
-                      </li>
+
 
                       <li><a id="gpt4v-marvl"></a>
                         <div class="row">
