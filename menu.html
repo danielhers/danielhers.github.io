@@ -17,3 +17,19 @@
 </p>
 
 <hr>
+
+<script>
+(function () {
+    const applicationLink = document.querySelector('a[href="https://employment.ku.dk/phd/?show=167227"]');
+    const newsItem = applicationLink && applicationLink.closest('li');
+    if (!newsItem) return;
+
+    newsItem.innerHTML = '<time datetime="2026-08">August 2026</time>: I am hiring a '
+        + '<a href="https://employment.ku.dk/phd/?show=167227">PhD student in Cultural Reasoning with Language Models</a> '
+        + 'for the <a href="https://culturalreasoning.github.io/"><i>CuRe</i></a> project, to start in February 2027. '
+        + 'Application deadline: 8 November 2026, 23:59 CET. If the main application system does not work, try the '
+        + '<a href="https://workindenmark.jobnet.dk/find-job/b9acf45f-080f-4b33-a40d-fe8975f246a5">Work in Denmark/Jobnet listing</a> or the '
+        + '<a href="https://ijob.dk/job/akademisk-arbejde/phd-fellowship-in-natural-language-processing-ku-science-datalogisk-institut-up1-63058472ba">iJob listing</a>. '
+        + 'If neither route works, email the complete application materials to <a href="mailto:dh@di.ku.dk">me</a> by the deadline so HR can register them.';
+})();
+</script>
